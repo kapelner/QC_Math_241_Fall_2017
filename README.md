@@ -76,34 +76,34 @@ My lectures can be listened to as youtube tracks [(all lectures)](https://www.yo
 
 * Midterm I
 
-[(practice exam 1)](https://github.com/kapelner/QC_Math_241_Fall_2016/blob/master/exams/midterm1/midterm1.pdf) [(exam solutions)](https://github.com/kapelner/QC_Math_241_Fall_2016/blob/master/exams/midterm1/midterm1_solutions.pdf)
+[(practice exam 1)](https://github.com/kapelner/QC_Math_241_Fall_2016/blob/master/exams/midterm1/midterm1.pdf) [(practice exam 1 exam solutions)](https://github.com/kapelner/QC_Math_241_Fall_2016/blob/master/exams/midterm1/midterm1_solutions.pdf)
 
-[(practice exam 2)](https://github.com/kapelner/QC_Math_241_Fall_2015/blob/master/exams/midterm1/midterm1.pdf) [(practice exam 1 solutions)](https://github.com/kapelner/QC_Math_241_Fall_2015/blob/master/exams/midterm1/midterm1_solutions.pdf) 
+[(practice exam 2)](https://github.com/kapelner/QC_Math_241_Fall_2015/blob/master/exams/midterm1/midterm1.pdf) [(practice exam 2 solutions)](https://github.com/kapelner/QC_Math_241_Fall_2015/blob/master/exams/midterm1/midterm1_solutions.pdf) 
 
-[(practice exam 3)](https://github.com/kapelner/QC_Math_241_Spring_2015/blob/master/exams/midterm1/midterm1.pdf?raw=true) [(practice exam 2 solutions)](https://github.com/kapelner/QC_Math_241_Spring_2015/blob/master/exams/midterm1/midterm1_solutions.pdf?raw=true) 
+[(practice exam 3)](https://github.com/kapelner/QC_Math_241_Spring_2015/blob/master/exams/midterm1/midterm1.pdf?raw=true) [(practice exam 3 solutions)](https://github.com/kapelner/QC_Math_241_Spring_2015/blob/master/exams/midterm1/midterm1_solutions.pdf?raw=true) 
 
-[(practice exam 4)](https://github.com/kapelner/QC_Math_241_Fall_2014_15/blob/master/exams/midterm1/midterm1.pdf?raw=true) [(practice exam 3 solutions)](https://github.com/kapelner/QC_Math_241_Fall_2014_15/blob/master/exams/midterm1/midterm1_solutions.pdf?raw=true)
+[(practice exam 4)](https://github.com/kapelner/QC_Math_241_Fall_2014_15/blob/master/exams/midterm1/midterm1.pdf?raw=true) [(practice exam 4 solutions)](https://github.com/kapelner/QC_Math_241_Fall_2014_15/blob/master/exams/midterm1/midterm1_solutions.pdf?raw=true)
 
 * Midterm II
 
-[(practice exam 1)](https://github.com/kapelner/QC_Math_241_Fall_2016/blob/master/exams/midterm2/midterm2.pdf) [(exam solutions)](https://github.com/kapelner/QC_Math_241_Fall_2016/blob/master/exams/midterm2/midterm2_solutions.pdf)
+[(practice exam 1)](https://github.com/kapelner/QC_Math_241_Fall_2016/blob/master/exams/midterm2/midterm2.pdf) [(practice exam 1 exam solutions)](https://github.com/kapelner/QC_Math_241_Fall_2016/blob/master/exams/midterm2/midterm2_solutions.pdf)
 
 
-[(practice exam 2)](https://github.com/kapelner/QC_Math_241_Fall_2015/blob/master/exams/midterm2/midterm2.pdf) [(practice exam 1 solutions)](https://github.com/kapelner/QC_Math_241_Fall_2015/blob/master/exams/midterm2/midterm2_solutions.pdf) 
+[(practice exam 2)](https://github.com/kapelner/QC_Math_241_Fall_2015/blob/master/exams/midterm2/midterm2.pdf) [(practice exam 2 solutions)](https://github.com/kapelner/QC_Math_241_Fall_2015/blob/master/exams/midterm2/midterm2_solutions.pdf) 
 
-[(practice exam 3)](https://github.com/kapelner/QC_Math_241_Spring_2015/blob/master/exams/midterm2/midterm2.pdf?raw=true) [(practice exam 2 solutions)](https://github.com/kapelner/QC_Math_241_Spring_2015/blob/master/exams/midterm2/midterm2_solutions.pdf?raw=true) 
+[(practice exam 3)](https://github.com/kapelner/QC_Math_241_Spring_2015/blob/master/exams/midterm2/midterm2.pdf?raw=true) [(practice exam 3 solutions)](https://github.com/kapelner/QC_Math_241_Spring_2015/blob/master/exams/midterm2/midterm2_solutions.pdf?raw=true) 
 
-[(practice exam 4)](https://github.com/kapelner/QC_Math_241_Fall_2014_15/blob/master/exams/midterm2/midterm2.pdf?raw=true) [(practice exam 3 solutions)](https://github.com/kapelner/QC_Math_241_Fall_2014_15/blob/master/exams/midterm2/midterm2_solutions.pdf?raw=true)
+[(practice exam 4)](https://github.com/kapelner/QC_Math_241_Fall_2014_15/blob/master/exams/midterm2/midterm2.pdf?raw=true) [(practice exam 4 solutions)](https://github.com/kapelner/QC_Math_241_Fall_2014_15/blob/master/exams/midterm2/midterm2_solutions.pdf?raw=true)
 
 * Final
 
-[(practice exam 1)](https://github.com/kapelner/QC_Math_241_Fall_2016/blob/master/exams/final/final.pdf) [(exam solutions)](https://github.com/kapelner/QC_Math_241_Fall_2016/blob/master/exams/final/final_solutions.pdf)
+[(practice exam 1)](https://github.com/kapelner/QC_Math_241_Fall_2016/blob/master/exams/final/final.pdf) [(practice exam 1 exam solutions)](https://github.com/kapelner/QC_Math_241_Fall_2016/blob/master/exams/final/final_solutions.pdf)
 
-[(practice exam 2)](https://github.com/kapelner/QC_Math_241_Fall_2015/blob/master/exams/final/final.pdf) [(practice exam 1 solutions)](https://github.com/kapelner/QC_Math_241_Fall_2015/blob/master/exams/final/final_solutions.pdf)  
+[(practice exam 2)](https://github.com/kapelner/QC_Math_241_Fall_2015/blob/master/exams/final/final.pdf) [(practice exam 2 solutions)](https://github.com/kapelner/QC_Math_241_Fall_2015/blob/master/exams/final/final_solutions.pdf)  
 
-[(practice exam 3)](https://github.com/kapelner/QC_Math_241_Spring_2015/blob/master/exams/final/final.pdf?raw=true) [(practice exam 2 solutions)](https://github.com/kapelner/QC_Math_241_Spring_2015/blob/master/exams/final/final_solutions.pdf?raw=true) 
+[(practice exam 3)](https://github.com/kapelner/QC_Math_241_Spring_2015/blob/master/exams/final/final.pdf?raw=true) [(practice exam 3 solutions)](https://github.com/kapelner/QC_Math_241_Spring_2015/blob/master/exams/final/final_solutions.pdf?raw=true) 
 
-[(practice exam 4)](https://github.com/kapelner/QC_Math_241_Fall_2014_15/blob/master/exams/final/final.pdf?raw=true) [(practice exam 3 solutions)](https://github.com/kapelner/QC_Math_241_Fall_2014_15/blob/master/exams/final/final_solutions.pdf?raw=true)
+[(practice exam 4)](https://github.com/kapelner/QC_Math_241_Fall_2014_15/blob/master/exams/final/final.pdf?raw=true) [(practice exam 4 solutions)](https://github.com/kapelner/QC_Math_241_Fall_2014_15/blob/master/exams/final/final_solutions.pdf?raw=true)
 
 ## Office Hours
 
