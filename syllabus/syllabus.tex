@@ -1,0 +1,428 @@
+\documentclass[12pt]{article}
+
+\usepackage[margin=1.2in]{geometry}
+\usepackage{hyperref}
+\usepackage{datetime}
+\usepackage[auth-sc,affil-sl]{authblk}
+\usepackage{color}
+\usepackage{placeins}
+\usepackage{enumerate}
+\definecolor{black}{rgb}{0,0,0}
+\definecolor{blue}{rgb}{0,0,0.7}
+\newcommand{\inblue}[1]{\color{blue}\textbf{#1} \color{black}}
+\definecolor{green}{rgb}{0.133,0.545,0.133}
+\newcommand{\ingreen}[1]{\color{green}\textbf{#1} \color{black}}
+\definecolor{yellow}{rgb}{1,0.549,0}
+\newcommand{\inyellow}[1]{\color{yellow}\textbf{#1} \color{black}}
+\definecolor{red}{rgb}{1,0.133,0.133}
+\newcommand{\inred}[1]{\color{red}\textbf{#1} \color{black}}
+\definecolor{purple}{rgb}{0.58,0,0.827}
+\newcommand{\inpurple}[1]{\color{purple}\textbf{#1} \color{black}}
+\definecolor{brown}{rgb}{0.55,0.27,0.07}
+\newcommand{\inbrown}[1]{\color{brown}\textbf{#1} \color{black}}
+
+\newcommand{\coursewebpage}{\href{https://github.com/kapelner/QC_Math_241_Fall_2017}{course homepage}}
+
+\newcommand{\qu}[1]{``#1''}
+
+
+\title{MATH 241 Fall 2017 (3 credits) \\ Course Syllabus}
+
+\author[]{Adam Kapelner, Ph.D.}
+
+\affil[]{Queens College, City University of New York}
+\settimeformat{ampmtime}
+\date{\small document last updated \today ~\currenttime }
+
+\begin{document}
+\maketitle
+
+\begin{table}[htp]
+\centering
+\begin{tabular}{rl}
+Instructor & Professor Adam Kapelner \\
+Office & 604 Kiely Hall \\
+Contact & \url{kapelner@qc.cuny.edu} \\
+Section A (241-03) Time / Loc & Monday and Wednesday 10:45AM - 12PM Kiely 326 \\
+Section B (241-04) Time / Loc & Tuesday and Thursday 1:40 - 2:55PM Kiely 326 \\
+Section C (241-06) Time / Loc & Tuesday and Thursday 6:30 - 7:45PM Kiely 258 \\
+Office Hours / Loc & Monday and Wednesday 12:30-1PM Kiely 604 \\
+Teaching Assistant & Evangeline Szpylka \\
+Course Homepage & \href{https://github.com/kapelner/QC_Math_241_Fall_2017}{https://github.com/kapelner/QC\_Math\_241\_Fall\_2017} \\
+\end{tabular}
+\end{table}
+
+\section*{Course Overview}
+
+MATH 241 is an introduction to the basic concepts and techniques of probability and statistics with an emphasis on applications. Topics to be covered are below (not in order of coverage):
+
+\begin{itemize}
+\itemsep -0.0em 
+\item Basic Set Theory
+\item Counting Methods --- permutations and combinations
+\item Basic Probability Theory --- axioms, conditional probability, in/dependence
+\item Modeling with Discrete Random Variables: Bernoulli, Hypergeometric, Binomial, Poisson, Geometric, Negative Binomial, Uniform Discrete, Rademacher and others
+\item Expectation, Variance, Covariance, Moments
+\item Modeling with Continuous Random Variables: Exponential, Uniform and Normal
+\item Moment Generating Functions
+\item Law of Large Numbers and the Central Limit Theorem
+\item Confidence Intervals and Hypothesis Testing for one-sample proportions (possibly $p$-values and statistical significance as well)
+\end{itemize}
+
+Students taking this course may not receive credit for MATH 114, except by permission of the chair. Pre/corequisites include MATH 132 or 143 or 152. \textbf{This is not your typical mathematics course.} This course develops ideas and concepts for helping to make decisions based on randomness and we will do lots of modeling of real-world situations. The course does not dwell on theory nor details of computation but will make use of computation especially using the \texttt{R} statistical language.
+
+
+\section*{Course Materials}
+
+\paragraph{Textbook:} A First Course in Probability by Sheldon Ross. I prefer the 7th edition which you can buy this used on \href{http://www.amazon.com/First-Course-Probability-7th-Edition/dp/0131856626}{Amazon} for \$6 (at the time of this writing). You can buy \textit{any edition} though if you find it cheaper. There is no excuse not to have this book. It is \textit{required}. However, I will not be teaching \qu{from the book} and most of the material in the class comes from the lecture notes. The textbook is a way to get ``another take'' on the material.
+
+\paragraph{Computer Software:} We will also be using \texttt{R} which is a free, open source statistical programming language and console. You can download it from: \url{http://cran.mirrors.hoobly.com/}. I do not expect you to do \textit{any} programming. I will be giving you \texttt{R} code to run and expect you to interpret the results based on concepts explained during the course.
+
+\paragraph{Calculator:} You can use a TI-84, 85, 89 or any calculator which you wish. I strongly suggest you use \href{http://www.wolframalpha.com/}{Wolfram Alpha} and its smartphone app.
+
+\section*{Announcements}
+
+Announcements will be made via email. I am known to send a couple emails per week on important issues. Thus, I will need the email address that you reliably check. The default is whatever is in CUNYfirst which many of you do not check. (See Homework \#0 for more information).
+
+\section*{Lectures}
+
+I have a no computer / tablet / phone policy during lectures. Only pen / pencil and paper. Classes are 75 minutes and run from Monday, August 28 until Tuesday, December 12. There will be 23 lectures periods, two days for the two midterm exams which are in class and two days for in-class reviews. Exam schedule is given on page~\pageref{subsec:exam_schedule}.
+
+\subsection*{Reschedule of Two Lectures}
+
+Due to the Jewish holidays, I must miss two lecture days: Thursday, October 5 and Thursday, October 12. See course homepage for announcements regarding these two days.
+
+\subsection*{Lecture Upload}
+
+As many previous students have noted, my handwritten notes are useful to me (and seemingly not to many others). Thus, I will be rewarding students for taking notes, scanning them in as a PDF (sub 2MB) and sending them to me. You will be rewarded in two ways: (1) if you do this for half the lectures, you will be given an automatic 5 points (see grading policy on page \pageref{sec:grading}) for your classroom participation grade and (2) you have the option for me to say your name publicly on the \coursewebpage. All lectures must be sent to me \textbf{no later than one week after the lecture date}.
+
+\section*{Homework}
+
+There will be 9--11 homework assignments. Homeworks will be assigned and placed on the \coursewebpage~ and will usually be due a week later in class. Homework will be \textbf{graded} out of 100 with extra credit getting scores possibly $> 100$. I (and the TAs) will be doing the grading. We will grade an \textit{arbitrary subset of the assignment} which is determined after the homework is handed in. But you will still be penalized for leaving questions blank regardless of whichever we grade. 
+
+Homework must be printed, neat and stapled (\textbf{it cannot be emailed to me}). Homework can be given to me in class or delivered to my office in Kiely Hall. \textit{Homework cannot be handed in to my mail slot in the Kiely mathematics office} (unless you want it to be counted as late).
+
+Graded homework will be returned in class. Regrades are handled during office hours or right after class is over. Scores for homeworks are finalized one week after the graded copies are handed back. Thereafter there will be no changes and no re-grading. Do not delay checking your graded homeworks. I (and the TAs) are not perfect and we do make mistakes. It is your obligation to find our mistakes and report them.
+
+You are encouraged to seek help from me if you have questions. After class and during office hours are good times. \ingreen{You are highly recommended to work with each other and help each other.} You must, however, submit your own solutions, \textit{with your own write-up} and in \textit{your own words}. There can be no collaboration on the actual \textit{writing}. Failure to comply will result in severe penalties. The university honor code is something I take seriously and I send people to the Dean every semester for violations.
+
+Homework will be similar to previous semesters' homeworks. I will change questions here and there. If you are copying from a previous students' homeworks, we will eventually find you since the criminal mind eventually will slip. Honesty is the best policy. It's not worth me giving you a zero for your entire homework grade --- you will likely be lowered a letter grade and a half.
+
+\subsection*{Philosophy of Homework}
+
+
+Homework is the \textit{most} important part of this course.\footnote{In one student's \href{http://www.ratemyprofessors.com/ShowRatings.jsp?tid=1951051}{observation}, I give a \qu{mind-blowing homework} every week.} Success in Statistics and Mathematics courses comes from experience in working with and thinking about the concepts. It's kind of like weightlifting; you have to lift weights to build muscles. My job as an instructor is to provide assistance through your \href{http://en.wikipedia.org/wiki/Zone_of_proximal_development}{zone of proximal development}. With me, you can grow more than you can alone. To this effect, homework problems are color coded \ingreen{green} for easy, \inyellow{yellow} for harder, \inred{red} for challenging and \inpurple{purple} for extra credit. You need to know how to do all the greens by yourself. If you've been to class and took notes, they are a joke. Yellows and reds: feel free to work with others. Only do extra credits if you have already finished the assignment. The \qu{[Optional]} problems are for extra practice --- highly recommended for exam study.
+
+\subsection*{Time Spent on Homework }
+
+This is a three credit course. Thus, the amount of work outside of the 2.5hr in-class time per week is 6-9 hours. I will aim for 6hr of homework per week on average. However, doing the homework well is your sole responsibility since I will make sure that by doing the homework you will study and understand the concepts in the lectures.
+
+\subsection*{Late Homework}
+
+Late homework will be penalized 10 points per day for a maximum of five days. Do not ask for extensions; just hand in the homework late. After five days, \textbf{you can hand it in whenever you want} until the last day of class, Thursday, December 10. As far as I know, this is one of the most lenient and flexible homework policies in college. I realize things come up. Do not abuse this policy; you will fall far, far behind.
+
+\subsection*{Homework \LaTeX~Bonus Points}
+
+Part of good mathematics is its beautiful presentation. Thus, \ingreen{there will be a 1--12 point bonus} added to your homework grade  for typing up your homework using the \LaTeX ~typesetting system based on the elegance of your presentation. The bonus is arbitrarily determined by me.
+
+I recommend using \href{http://overleaf.com}{overleaf} to write up your homeworks (make sure you upload both the hw\#.tex and the preamble.tex file). This has the advantage of (a) not having to install anything on your computer and not having to maintain your \LaTeX ~installation (b) allowing easy collaboration with others (c) alway having a backup of your work since it's always on the cloud. If you insist to have \LaTeX ~running on your computer, you can download it for Windows \href{http://www.miktex.org/download}{here} and for MAC \href{http://www.tug.org/mactex/}{here}. For editing and producing PDF's, I recommend \TeX works which can be downloaded \href{http://www.tug.org/texworks/#Getting_TeXworks}{here}. Please use the \LaTeX ~code provided on the \coursewebpage ~for each homework assignment. 
+
+If you are handing in homework this way, read the comments in the code; there are two lines to comment out and you should replace my name with yours and write your section. The easiest way to use overleaf is to copy the raw text from hwxx.tex and preamble.tex into two new overleaf tex files with the same name. If you are asked to make drawings, you can take a picture of your handwritten drawing and insert them as figures or leave space using the \qu{$\backslash$vspace} command and draw them in after printing or attach them stapled.
+
+Since this is extra credit, do not ask me for help in setting up your computer with \LaTeX~ in class or in office hours. Also, \textbf{never share your \LaTeX~code with other students} --- it is cheating.
+
+\subsection*{Homework Extra Credit}
+
+There will be many extra credit questions sprinkled throughout the homeworks. They will be worth a variable number of points arbitrarily assigned based on my perceived difficulty of the exercise. Homework scores in the 140's are not unheard of. They are a good boost to your grade; I once had a student go from a B to and A- based on these bonuses.
+
+\subsection*{Homework Redo Policy}
+
+After a homework is graded and (a) you do not have a ZERO on the homework and (b) your HW grade is failing (i.e. under 65), you may hand in a homework \qu{redo} at any time before the final date to hand in homeworks (see above under \qu{Late Homework}). 
+
+You must redo the \textit{entire} homework. If it was handwritten, you must copy all the answers and redo the wrong questions. Then, you must hand in \textit{both} the old homework and the new homework with the redone homework clearly marked as a \qu{redo.}
+
+I will remark the redone homework possibly marking questions that I did not mark previously. I will then record your final score as the average of the old and new scores. \LaTeX~bonus still will be applied. If the original homework was handed in late, the same late penalty applies to the redone homework.
+
+\subsection*{Homework \#0}
+
+For your first homework (due immediately). You must:
+
+\begin{enumerate}[(1)]
+\item email me at \href{kapelner@qc.cuny.edu}{kapelner@qc.cuny.edu} from the email address you wish to be contacted at for this course (most commonly this is a gmail address) and in the email,
+\item you must say \qu{My name is $<$Your Full Name as appears in the registrar$>$},
+\item you must answer the multiple choice quiz at the end of the syllabus (see page \pageref{quiz}) and
+\item you attach a picture of you so I can memorize and know your name. (You can also say \qu{I opt-out of picture} and state your reason).
+\end{enumerate}
+
+I will email you back a password you can use to check the \href{http://gradesly.com}{course grading site} once the site is up (which should be a couple weeks into the semester). \\
+
+This assignment is due Friday, Sept 1, 2015 5PM and will receive a grade of 0 or 100 with the usual 10 point penalty for lateness.
+
+
+\section*{Examinations}
+
+Examinations are solely based on homeworks! If you can do all the green and yellow problems on the homeworks, the exams should not present any challenge. I will \textit{never} give you exam problems on concepts which you have not seen at home on one of the weekly homework assignments. There will be three exams and the schedule is below.
+
+\subsection*{Exam Schedule}\label{subsec:exam_schedule}
+
+\begin{itemize}
+\itemsep -0.0em 
+\item Midterm examination I will be October 4/5 in class
+\item Midterm examination II will be November 15/16 in class
+\item The final examination will be 11-1PM in KY326 December 18 for Section A, 1:45-3:45PM in KY326 December 18 for Section B and 6:15-8:15PM in KY258 December 19 for Section C
+\end{itemize}
+
+\subsection*{Exam Materials}
+
+I allow you to bring any calculator you wish but it cannot be your phone. The only other items allowed are pencil and eraser. I do not recommend using pen but it is allowed
+
+I also allow \qu{cheat sheets} on examinations. For both midterms, you are allowed to bring one 8.5'' $\times$ 11'' sheet of paper (front and back). On this paper you can write anything you would like which you believe will help you on the exam. For the final, you are allowed to bring three 8.5'' $\times$ 11'' sheet of paper (front and back). I will be handing back the cheat sheets so you can reuse your midterm cheat sheets for the final if you wish. 
+
+
+\subsection*{Cheating on Exams}
+
+If I catch you cheating, you can either take a zero on the exam, or you can roll the dice before the University Honor Council who may choose to suspend you.
+
+
+\subsection*{Missing Exams}
+
+There are no make-up exams. If you miss the exam, you get a zero. If you are sick, I need documentation of your visit to a hospital or doctor. Expect my TA to call the doctor or hospital to verify the legitimacy of your note. If you need to leave the country for an emergency, I will expect proper documentation as well.
+
+
+\subsection*{Missing the Final}
+
+Automatic WU grade. You can get an F by coming and \qu{taking} the final.
+
+\subsection*{Special Services}
+
+If you are a student who takes exams at the special services center, I need to see your blue slip one week before the exam to make proper arrangements with the center.
+
+\section*{Class Participation (and attendance)}
+
+I will be taking attendance during the class. Attendance counts towards the class participation portion of your grade in equal part with how often you ask and answer questions during the lecture.
+
+
+\section*{Grading and Grading Policy}\label{sec:grading}
+
+Your course grade will be calculated based on the percentages as follows: 
+
+\begin{table}[h]
+\centering
+\begin{tabular}{l|l}
+Homework & 20\% \\
+Class participation & 5\% \\
+Midterm Examination I & 20\%\\
+Midterm Examination II & 20\%\\
+Final Examination & 35\%
+\end{tabular}
+\end{table}
+\FloatBarrier
+
+The semester is split into three periods (1) from the beginning until midterm I (2) from midterm I to midterm II (3) from midterm II until the final. The material in each of the periods is tested evenly; thus, it counts the same towards your grade. Since there is 75\% of the grade allotted to exams, there is 25\% allotted to each period. Thus, the final is upweighted towards the material covered in the third period. In summary, the final will have 5/35 points $\approx$ 14\% for the first period's material, 5/35 points $\approx$ 14\% for the second period's material and 25/35 points $\approx$ 71\% for the last period's material. A good strategy for the final is to just study the material after Midterm II and minimal studying for the previous material.
+
+Course grades are given on an approximate curve.
+
+\subsection*{Previous semesters' grade distributions}
+
+Below is a history of previous semesters' grade distributions with approximate cutoffs.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{l|cccccccccccc}
+Grade & F   & D      & D+   & C-    & C     & C+    & B-    & B     & B+   & A-    & A      & A+ \\ \hline
+$n$   & 11    & 0      & 0     & 6      & 6     & 6      & 5     & 5     & 4     & 5      & 6      & 0 \\
+\%ile & --- & ---  &  ---        & 21    & 32   & 46    & 57   & 66   & 75 & 82 & 91 & --- \\ \hline
+\end{tabular}
+\caption{Math 241 Fall, 2015. Total enrollment out of three sections save no-shows was $n=56$.}
+\end{table}
+\FloatBarrier
+\begin{table}[h]
+\centering
+\begin{tabular}{l|cccccccccccc}
+Grade & F   & D      & D+   & C-    & C     & C+    & B-    & B     & B+   & A-    & A      & A+ \\ \hline
+$n$   & 3    & 3      & 4      & 4      & 6     & 4      & 3     & 6      & 3     & 4      & 3      & 0 \\
+\%ile & --- & 7.1  &  16.7 & 23.8 & 33.3 & 47.6 & 57.1 & 64.3 & 76.2 &  81.0 & 92.9 & --- \\ \hline
+\end{tabular}
+\caption{Math 241 Spring, 2015. Total enrollment out of two sections save no-shows was $n=42$.}
+\end{table}
+\FloatBarrier
+\begin{table}[h]
+\centering
+\begin{tabular}{l|cccccccccccc}
+Grade & F & D & D+ & C- & C & C+ & B- & B & B+ & A- & A & A+ \\ \hline
+$n$ & 6 & 5 & 1 & 5 & 4 & 4 & 4 & 6 & 4 & 2 & 6 & 1 \\
+\%ile & --- & 14.6 &  25.0 & 35.4 & 43.8 & 52.1 & 62.5 & 75.0 & 66.6 &  83.3 & 87.5 & 100 \\ \hline
+\end{tabular}
+\caption{Math 241 Fall, 2014. Total enrollment out of two sections save no-shows was $n=48$.}
+\end{table}
+\FloatBarrier
+
+I am not obligated to mirror these grade distribution and cutoffs this semester. Grade distributions vary from semester-to-semester based on the relative difficulty of exams, student ability and randomness in raw score clustering. The above is meant for informational purposes only. Do not come to me expecting a negotiation of your grade based on a previous semester's cutoff.
+
+\subsection*{The Computer Science C- requirement}
+
+This class is a required course for the Computer Science major and requires a minimum of a C- to earn credit for the major. I cannot assign grades based on student need. What I can do is let you know if you are in danger of getting a grade lower than C- after the first exam and after the second exam. The second exam is scheduled on the day of the Withdraw deadline and I will do my best to have them graded well before the deadline. 
+
+If you are below the 25\%ile and you are a CS major, you are on the border of passing your requirement. If you do not plan on studying hard for the final and improving your grade, you may choose to withdraw, thereby allowing you to focus on other classes only to retake Math 241 in the future (and this time earn a stellar grade).
+
+\subsection*{Checking your grade and class standing}
+
+You can always check your grades in real-time using the \href{http://gradesly.com}{grading site}. You will enter in your QC ID number and the password I will provide to you after homework 0.
+
+
+
+\section*{Auditing}
+
+Auditors are welcome in both sections. They are encouraged to do all homework assignments. I will even grade them. Note that the university does not allow auditors to take examinations.
+
+\pagebreak
+
+\section*{Homework 0 Quiz}\label{quiz}
+
+\begin{enumerate}[1.]
+\item Is this a typical math course?
+
+\begin{enumerate}[(a)]
+\item Yes --- this is just another variation on calculus
+\item No --- this is an applied math course and we will be discussing philosophy, decision theory and much else
+\end{enumerate}
+
+\item Is there a required textbook?
+
+\begin{enumerate}[(a)]
+\item Yes --- the Sheldon Ross book
+\item No --- the book is not necessary to read, I can just use the class notes and listen to the lectures online
+\end{enumerate}
+
+\item Is there a required calculator?
+
+\begin{enumerate}[(a)]
+\item Yes --- the TI-83+
+\item No --- but you have to bring a graphing calculator for exams
+\item No --- but you need to bring some type of calculator for exams
+\item No --- we will make no use of calculators in this course even on exams
+\end{enumerate}
+
+\item How many new material lectures are there?
+
+\begin{enumerate}[(a)]
+\item 27
+\item 25
+\item 23
+\end{enumerate}
+
+
+\item If I miss class, what do I do?
+
+\begin{enumerate}[(a)]
+\item Watch the online videos
+\item Listen to online lectures only
+\item Listen to online lectures and copy a friend's notes
+\end{enumerate}
+
+\item How can I be guaranteed the five points of classroom participation?
+
+\begin{enumerate}[(a)]
+\item Come to class every period
+\item Scan 13 days of lecture notes is as PDFs (less than 2MB)
+\item Scan one day of lecture notes as a JPG
+\end{enumerate}
+
+\item Can I work together with other students on the homework?
+
+\begin{enumerate}[(a)]
+\item Yes and we can collaborate handing in one writeup with all of our names on it
+\item Yes and we can collaborate handing in separate writeups
+\item No
+\end{enumerate}
+
+\item How do I earn extra points on the homework?
+
+\begin{enumerate}[(a)]
+\item Using \LaTeX ~and/or doing the extra credit problems. No sharing \LaTeX~code.
+\item Only using \LaTeX . No sharing \LaTeX~code.
+\item Only doing the extra credit problems
+\item There is no way to earn extra points
+\end{enumerate}
+
+\item Can homework be handed in late?
+
+\begin{enumerate}[(a)]
+\item No. It will be given a zero.
+\item Yes. Up to 3 days.
+\item Yes. Up until the last lecture day of the semester.
+\end{enumerate}
+
+
+\item What are the exams based on?
+
+\begin{enumerate}[(a)]
+\item Skills built from doing homework problems
+\item Details from lectures
+\item Lecture topics that were not assessed in the homework assignments
+\end{enumerate}
+
+\item How are the grades computed?
+
+\begin{enumerate}[(a)]
+\item They are based on raw scores based on the percentages found in the course policy section of this document
+\item They are based only on exams
+\item They are mostly a reflection of your homework score
+\item They are mostly a reflection of your classroom participation
+\end{enumerate}
+
+
+\item Does it matter if the exams are \qu{too hard}?
+
+\begin{enumerate}[(a)]
+\item Yes, then a lot of students won't get a high grade
+\item No, because most students fail this course regardless of exam grades
+\item No, not one bit; since the course is curved, we are graded on performance relative to others so the raw exam scores do not actually matter
+\end{enumerate}
+
+\item What happens when the exam is too easy? 
+
+\begin{enumerate}[(a)]
+\item Nothing! We'll all get high grades!
+\item This is good thing: the curve will have more A's.
+\item This is a bad thing: too many students ceiling out at 100 and the ones who make careless errors get 92's and may get B's unfairly.
+\end{enumerate}
+
+\item Given the answer to question 11, if you were to design an exam for this class, which is curved, what is the \textit{fairest} exam average?
+
+\begin{enumerate}[(a)]
+\item 20\%
+\item 60\%
+\item 90\%
+\end{enumerate}
+
+\item What can I use during the exams?
+
+\begin{enumerate}[(a)]
+\item My notes
+\item My phone
+\item My calculator
+\item A cheat sheet and the textbook
+\end{enumerate}
+
+\item Missing the final will guarantee you get a \_\_\_ for your final grade.
+
+\begin{enumerate}[(a)]
+\item F
+\item C-
+\item WU
+\item D
+\end{enumerate}
+
+\item How many students will get A's or A-'s?
+
+\begin{enumerate}[(a)]
+\item 5 students only regardless of enrollment
+\item The top 10 students only regardless of enrollment
+\item The top 50\% of students regardless of enrollment save the WU's
+\item The top $\approx$16-19\% of students regardless of enrollment save the WU's
+\end{enumerate}
+
+
+\end{enumerate}
+\end{document}
