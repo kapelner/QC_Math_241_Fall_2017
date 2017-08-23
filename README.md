@@ -9,11 +9,7 @@ A, Mon/Wed 10:45AM - 12PM
 B, Mon/Wed 1:40PM - 2:55PM
 C, Tue/Thu 6:30PM - 7:45PM
 
-Due to the Jewish holidays, I cannot be here on two Thursdays for Section C: October 5 and 12. If you are in Sections A or B, ignore the following.
-
-* The first Thursday will be a proctored Midterm 1 exam at the usual class time (except I won't be there). For those who cannot be here October 5, you will have to take the exam during section A or B on Wednesday October 4. Plan for that starting now.
-* There will be no class (nor exam) scheduled for the usual time slot on Thursday, October 12. 
-* I usually give one whole lecture period devoted entirely to review. There will be no such lecture period for section C for Midterm 2. To make up for this, I will do a separate review period Monday November 11 from 6:30-7:45PM. You are also welcome to come to the review in Sections A and B that morning for review.
+If you are in Sections A or B, ignore the following. Due to the Jewish holidays, I cannot be here on two Thursdays for Section C: October 5 and 12 and thus those two classes are canceled. I usually give one whole lecture period devoted entirely to review. There will be no such lecture period for section C for Midterms 1 and 2. To make up for this, I will do a separate review period Monday October 2 from 6:30-8PM and Monday November 12 from 6:30-7:45PM for Section C only. Section C students are also welcome to come to the review in Sections A and B those Monday mornings for additional review.
 
 ## Lectures
 
@@ -56,19 +52,16 @@ My lectures can be listened to as youtube tracks [(all lectures)](https://www.yo
 * Homework 4 [(download)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/homeworks/hw04/hw04.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/homeworks/hw04/hw04.pdf) (due 10/6/16)
 * Homework 3 [(download)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/homeworks/hw03/hw03.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/homeworks/hw03/hw03.pdf) (due 9/20/16)
 * Homework 2 [(download)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/homeworks/hw02/hw02.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/homeworks/hw02/hw02.pdf) (due 9/13/16)
-* Homework 1 [(download)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/homeworks/hw01/hw01.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/homeworks/hw01/hw01.pdf) (due 9/6/16)
-* Homework 0 [(download)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/syllabus/syllabus.pdf?raw=true) See page 6 (due 8/30/16)
--->
+* Homework 1 [(download)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/homeworks/hw01/hw01.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/homeworks/hw01/hw01.pdf) (due 9/6/16)-->
+* Homework 0 [(last few pages of syllabus)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/syllabus/syllabus.pdf?raw=true) (due 9/1/17)
+
 
 ## Exams
 
 
-* Midterm I, October 4/5 (in class). 
+* Midterm I, October 3/4 (in class). 
 
-
-
-* Midterm II, November 7/8 (in class). 
-
+* Midterm II, November 14/15 (in class). 
 
 * Final, December 18/19
 
@@ -87,7 +80,6 @@ My lectures can be listened to as youtube tracks [(all lectures)](https://www.yo
 * Midterm II
 
 [(practice exam 1)](https://github.com/kapelner/QC_Math_241_Fall_2016/blob/master/exams/midterm2/midterm2.pdf) [(practice exam 1 solutions)](https://github.com/kapelner/QC_Math_241_Fall_2016/blob/master/exams/midterm2/midterm2_solutions.pdf)
-
 
 [(practice exam 2)](https://github.com/kapelner/QC_Math_241_Fall_2015/blob/master/exams/midterm2/midterm2.pdf) [(practice exam 2 solutions)](https://github.com/kapelner/QC_Math_241_Fall_2015/blob/master/exams/midterm2/midterm2_solutions.pdf) 
 
