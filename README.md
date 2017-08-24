@@ -101,7 +101,7 @@ My lectures can be listened to as youtube tracks [(all lectures)](https://www.yo
 
 I *want* you to come to office hours! My office hours are:
 
-Time: Mon / Wed 12:30-1:30PM
+Time: Mondaty 12:30-1:30PM and Wednesday 3-4PM
 Location: Kiely Hall 604 (my office)
 
 ## Grades and Class Standing
