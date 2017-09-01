@@ -9,7 +9,7 @@ A, Mon/Wed 10:45AM - 12PM
 B, Mon/Wed 1:40PM - 2:55PM
 C, Tue/Thu 6:30PM - 7:45PM
 
-If you are in Sections A or B, ignore the following. Due to the Jewish holidays, I cannot be here on two Thursdays for Section C: October 5 and 12 and thus those two classes are canceled. I usually give one whole lecture period devoted entirely to review. There will be no such lecture period for section C for Midterms 1 and 2. To make up for this, I will do a separate review period Monday October 2 from 6:30-8PM and Monday November 12 from 6:30-7:45PM for Section C only. Section C students are also welcome to come to the review in Sections A and B those Monday mornings for additional review.
+If you are in Sections A or B, ignore the following. Due to the Jewish holidays, I cannot be here on two Thursdays for Section C: October 5 and 12 and thus those two classes are canceled. I usually give one whole lecture period devoted entirely to review. There will be no such lecture period for section C for Midterms 1 and 2. To make up for this, I will do a separate review period Monday October 2 from 6:30-8PM and Monday November 13 from 6:30-7:45PM for Section C only. Section C students are also welcome to come to the review in Sections A and B those Monday mornings for additional review.
 
 ## Lectures
 
@@ -36,10 +36,10 @@ My lectures can be listened to as youtube tracks [(all lectures)](https://www.yo
 * Lecture 6 [(audio)](https://clyp.it/u2wjhut1) [(Randip Parhar)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/lectures/lec06parhar.pdf) [(David Kim)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/lectures/lec06kim.pdf) [(Monique Tang)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/lectures/lec06tang.pdf) [(Nhi Tran)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/lectures/lec06tran.pdf) [(Andrew Kwak)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/lectures/lec06kwak.pdf) [(Prof)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/lectures/lec06kap.pdf)
 * Lecture 5 [(audio)](https://clyp.it/whwedabc) [(Randip Parhar)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/lectures/lec05parhar.pdf) [(Monique Tang)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/lectures/lec05tang.pdf) [(Prof)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/lectures/lec05kap.pdf)
 * Lecture 4 [(audio)](https://clyp.it/hplwtkqg) [(Marcin Sendrowicz Lec3&4)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/lectures/lec04marcin.pdf) [(Randip Parhar)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/lectures/lec04parhar.pdf) [(Monique Tang)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/lectures/lec04tang.pdf)  [(Prof)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/lectures/lec04kap.pdf)
+<<<<<<< HEAD
 * Lecture 3 [(audio)](https://clyp.it/cqxbt3ez) [(Randip Parhar)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/lectures/lec03parhar.pdf) [(Monique Tang)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/lectures/lec03tang.pdf) [(Andrew Kwak)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/lectures/lec03kwak.pdf) [(ZhauHua Tan)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/lectures/lec03tan.pdf)  [(Ken Zou)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/lectures/lec03zou.pdf) [(Prof)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/lectures/lec03kap.pdf)-->
 * Lecture 2 [(audio)](https://youtu.be/qadgUoHEO14)
-* Lecture 1 [(audio)](https://youtu.be/Koo7j3ZQMdw) [(Mike Morcerf)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/lectures/lec01morcerf.pdf)
-
+* Lecture 1 [(audio)](https://youtu.be/Koo7j3ZQMdw) [(Michelle Sawh)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/lectures/lec01sawh.pdf) [(Mike Morcerf)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/lectures/lec01morcerf.pdf)
 
 ## Homeworks
 
