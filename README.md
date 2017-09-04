@@ -38,8 +38,8 @@ My lectures can be listened to as youtube tracks [(all lectures)](https://www.yo
 * Lecture 4 [(audio)](https://clyp.it/hplwtkqg) [(Marcin Sendrowicz Lec3&4)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/lectures/lec04marcin.pdf) [(Randip Parhar)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/lectures/lec04parhar.pdf) [(Monique Tang)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/lectures/lec04tang.pdf)  [(Prof)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/lectures/lec04kap.pdf)
 <<<<<<< HEAD
 * Lecture 3 [(audio)](https://clyp.it/cqxbt3ez) [(Randip Parhar)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/lectures/lec03parhar.pdf) [(Monique Tang)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/lectures/lec03tang.pdf) [(Andrew Kwak)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/lectures/lec03kwak.pdf) [(ZhauHua Tan)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/lectures/lec03tan.pdf)  [(Ken Zou)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/lectures/lec03zou.pdf) [(Prof)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/lectures/lec03kap.pdf)-->
-* Lecture 2 [(audio)](https://youtu.be/qadgUoHEO14)
-* Lecture 1 [(audio)](https://youtu.be/Koo7j3ZQMdw) [(Michelle Sawh)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/lectures/lec01sawh.pdf) [(Mike Morcerf)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/lectures/lec01morcerf.pdf)
+* Lecture 2 [(audio)](https://youtu.be/qadgUoHEO14) [(anonymous)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/lectures/lec02anon.pdf)
+* Lecture 1 [(audio)](https://youtu.be/Koo7j3ZQMdw) [(Michelle Sawh)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/lectures/lec01sawh.pdf) [(Mike Morcerf)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/lectures/lec01morcerf.pdf) [(anonymous)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/lectures/lec01anon.pdf)
 
 ## Homeworks
 
