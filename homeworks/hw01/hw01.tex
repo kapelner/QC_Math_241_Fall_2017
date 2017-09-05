@@ -1,0 +1,247 @@
+\documentclass[12pt]{article}
+
+\include{preamble}
+
+\newtoggle{spacingmode}
+\toggletrue{spacingmode}  %STUDENTS: DELETE or COMMENT this line
+
+\newtoggle{professormode}
+\toggletrue{professormode} %STUDENTS: DELETE or COMMENT this line
+
+\newcommand{\spc}[1]{\iftoggle{spacingmode}{\\ \vspace{#1cm}}}
+
+
+\title{MATH 241 Fall 2017 Homework \#1}
+
+\author{Professor Adam Kapelner} % STUDENTS: DELETE my name and put your name and section here e.g. \author{John Doe, Section A}. MAKE SURE YOU PUT YOUR SECTION HERE!!!!!!!!
+
+\iftoggle{professormode}{
+\date{Due 5PM outside my office KY604, Tuesday, Sep. 6, 2015 \\ \vspace{0.5cm} \small (this document last updated \today ~at \currenttime)}
+}
+
+
+\renewcommand{\abstractname}{Instructions and Philosophy}
+
+\begin{document}
+\maketitle
+
+\iftoggle{professormode}{
+\begin{abstract}
+The path to success in this class is to do many problems. Unlike other courses, exclusively doing reading(s) will not help. Coming to lecture is akin to watching workout videos; thinking about and solving problems on your own is the actual ``working out''.  Feel free to \qu{work out} with others; \textbf{I want you to work on this in groups.}
+
+Reading is still \textit{required}. For this homework set, read the section about sample spaces in Chapter 2 and relevant parts of Chapter 1 in Ross. Chapter references are from the 7th edition.
+
+The problems below are color coded: \ingreen{green} problems are considered \textit{easy} and marked \qu{[easy]}; \inorange{yellow} problems are considered \textit{intermediate} and marked \qu{[harder]}, \inred{red} problems are considered \textit{difficult} and marked \qu{[difficult]} and \inpurple{purple} problems are extra credit. The \textit{easy} problems are intended to be ``giveaways'' if you went to class. Do as much as you can of the others; I expect you to at least attempt the \textit{difficult} problems.
+
+This homework is worth 100 points but the point distribution will not be determined until after the due date. See syllabus for the policy on late homework.
+
+Up to 15 points are given as a bonus if the homework is typed using \LaTeX. Links to instaling \LaTeX~and program for compiling \LaTeX~is found on the syllabus. You are encouraged to use \url{overleaf.com}. If you are handing in homework this way, read the comments in the code; there are two lines to comment out and you should replace my name with yours and write your section. If you are asked to make drawings, you can take a picture of your handwritten drawing and insert them as figures or leave space using the \qu{$\backslash$vspace} command and draw them in after printing or attach them stapled.
+
+The document is available with spaces for you to write your answers. If not using \LaTeX, print this document and write in your answers. I do not accept homeworks not on this printout. Keep this first page printed for your records. Write your name and section below (A or B).
+
+\end{abstract}
+
+\thispagestyle{empty}
+\vspace{1cm}
+NAME: \line(1,0){240} ~~SECTION (A or B): \line(1,0){35}
+\pagebreak
+}
+
+\iftoggle{professormode}{
+\paragraph{Set Theory} Problems below are related to set theory. The sets we talk about in class are composed of outcomes in a universe that are events. Some of the problems below will be about abstract sets that are divorced from the sets used in probability.\\ \\
+}
+
+\problem These are questions on abstract set theory. Assume capital letters are arbitrary sets and $\Omega$ is the universe for all the following questions. Answer as succinctly as possible.
+
+\begin{enumerate}
+\easysubproblem Answer the following as best as possible. \\
+$A \cup A$ = \quad\quad \\
+$A \cap A$ = \quad\quad \\
+$A \cap \varnothing$ = \quad\quad \\
+$A \cup \Omega$ = \quad\quad  \\
+$A \cap \Omega$ = \quad\quad \\
+$A \cup A^C$ = \quad\quad \\
+$A \cap A^C$ = \quad\quad \\
+$(A^C)^C$ = \quad\quad \\
+$\varnothing^C$ = \quad\quad \\
+$\Omega^C$ = \quad\quad \\
+$A \backslash A$ = \quad\quad \\
+$\Omega \backslash A$ = \quad\quad \\
+$A \backslash \Omega$ = \quad\quad \\
+$A \backslash \varnothing$ =
+
+\easysubproblem Are the following true (T) or false (F) for arbitrary sets $A,~B,~C$? The last one is extra credit and requires an explanation for bonus points. \\
+$A \subseteq \Omega$ \quad\quad \\
+$A \subset \Omega$ \quad\quad \\
+$\varnothing \subseteq A $ and $A \subseteq \Omega$ \quad\quad  \\
+$A \subseteq A \cup B$ \quad\quad \\
+$A \subseteq A \cap B$ \quad\quad \\
+$A \in A$\
+
+\intermediatesubproblem Are the following true (T) or false (F) for the arbitrary set $A$? \\
+$A \subseteq A$ \quad\quad \\
+$A \subset A$ \quad\quad \\
+$\varnothing \subseteq A $ \\
+$\varnothing \subset A $ \\
+$\varnothing \subseteq \varnothing$ \quad\quad \\
+$\varnothing \subset \varnothing$
+
+\intermediatesubproblem Are the following true (T) or false (F)? The symbol \qu{$\Rightarrow$} denotes logical implication \ie if the conditions on the l.h.s are met, the statement on the r.h.s is always true. Commas should be interpreted to mean ``and.'' \\
+$A \subseteq B \Rightarrow A \cap B = A$ \quad\quad \\
+$A \subseteq B,~ B \subseteq C \Rightarrow A \subseteq C$ \quad\quad \\
+$A \subseteq B,~ B \subseteq C \Rightarrow A \subset C$ \quad\quad \\
+$A \subseteq B,~ A \subseteq C \Rightarrow A \subset B \cap C$ \quad\quad \\
+$A \subset A \cup B$
+
+\intermediatesubproblem Express $A \cap B$ only in terms of set subtraction (by using the symbol \qu{\textbackslash}). \spc{2}
+
+\easysubproblem Explain why $A \cup B = B \cup A$ \textit{in English}. \spc{2}
+
+
+\easysubproblem If $\braces{A,B,C}$ are collectively exhaustive, simplify $A \cup B \cup C$. \spc{1}
+
+\intermediatesubproblem If $\braces{A,B,C}$ are collectively exhaustive, simplify $A \cap B \cap C$. \spc{2}
+
+\intermediatesubproblem If $\braces{A,B,C}$ are mutually exclusive, simplify $A \cup B \cup C$. \spc{2}
+
+\easysubproblem If $\braces{A,B,C}$ are mutually exclusive, simplify $A \cap B \cap C$. \spc{1}
+
+\easysubproblem Prove $\angbraces{a,b} \neq \angbraces{b,a}$ from the definition of the ordered pair. \spc{2}
+
+\easysubproblem Prove $\angbraces{a,b} \neq \angbraces{b,a}$ from the definition of the ordered pair. \spc{2}
+
+\extracreditsubproblem Prove DeMorgan's laws from the ground up. \spc{10}
+
+\end{enumerate}
+
+\problem Consider the sample space $\Omega$ where you flip a fair coin and roll a fair die.
+
+\begin{enumerate}
+\easysubproblem Draw this outcome space in a Venn Diagram. Use a rectangle for $\Omega$.  \spc{3}
+
+\easysubproblem What is $\abss{\Omega}$?  \spc{1}
+
+\intermediatesubproblem What is the size of the event space? \spc{2}
+
+\easysubproblem Are singleton sets (sets of size 1) of the outcomes in $\Omega$ mutually exclusive? Explain why. \spc{3}
+
+\easysubproblem Are singleton sets (sets of size 1) of the outcomes in $\Omega$ collectively exhaustive? Explain why.  \spc{3}
+
+\easysubproblem Using our \qu{working definition} of probability, what is the probability of heads or an even number? \spc{3}
+
+\intermediatesubproblem Describe fully the set $2^{(E \cup T)^C}$ \ie list all its elements. \spc{5}
+
+\end{enumerate}
+
+\problem A \qu{full deck of cards} has 52 cards where each card has two characteristics: (1) one of four suits $\spadesuit,~\heartsuit,~ \clubsuit$ and $\diamondsuit$ and (2) one of 13 ranks: A, 2, 3, 4, 5, 6, 7, 8, 9, 10, J, Q, K and each card is unique. The game Euchre (see \url{http://en.wikipedia.org/wiki/Euchre} for more information), 24 playing cards are used consisting of only aces, kings, queens, jacks, tens, and nines.
+
+\begin{enumerate}
+
+\intermediatesubproblem Construct $\Omega_E$, the event space of a Euchre deck by using set notation and operations on $\Omega$, the event space of a full deck of cards. Use the ``...'' notation used in class to specify your sets explicitly and use rank and suit such as 4$\clubsuit$ to denote the $\omega$'s $\in \Omega$. Hint: use the Cartestian product (denoted by $\times$) on two sets. \spc{4}
+
+\hardsubproblem Let $B$ be the set of black cards, $F$ the set of face cards and $\spadesuit$ the set of spades. Describe the set on the r.h.s of:
+
+\beqn
+\braces{A\spadesuit, 9\heartsuit, K\diamondsuit} \cup \diameter ~\subseteq~ \parens{\parens{B \cap F}^C \cup \spadesuit}^C \backslash \parens{\braces{10\spadesuit, 10\diamondsuit, 10\heartsuit} \cap \Omega}
+\eeqn
+\spc{3}
+
+\hardsubproblem Do this problem after completing the last questions since it has to do with counting. Given 5 Euchre cards, how many ways is there to order them \spc{2.5}
+
+\hardsubproblem You are dealt five Euchre cards out of the 24 total hands. How many ways is there to order all hands?\spc{4}
+
+\end{enumerate}
+
+
+\problem We will review the notation $\naturals$, $\integers$, $\rationals$ and $\reals$ as well as their subsets.
+
+\begin{enumerate}
+\easysubproblem Draw a number line for $x$ and shade in the area that represents the set $\bracks{1,3} \cup (4,9]$. If the set includes a number on the endpoint, draw a solid circle \qu{$\bullet$} and if does not include the number, draw an open circle \qu{$\circ$.} \spc{3}
+
+\easysubproblem Draw a number line for $Z \subset \reals$ where $Z := \braces{x \in \reals : |x| > 2}$. This $Z$ notation we'll be using in a couple months when we get to the normal distribution. $Z$ is not $\integers$. \spc{2}
+
+\easysubproblem Draw on the number line the set $\bracks{0,1} \cap \parens{0, \half} \cap \bracks{0, \fourth}$. \spc{2}
+
+\intermediatesubproblem Find the set $A := \infunion{i}{\bracks{0, \oneover{i}}}$. \spc{3}
+
+\hardsubproblem Find the set $B := \infinter{i}{\bracks{0, \oneover{i}}}$.  \spc{3}
+
+\easysubproblem Find the set $\integers \backslash \naturals$. \spc{1}
+
+\intermediatesubproblem Describe the set $\reals \backslash \rationals$ as best as you can in English and give an example of an element of this set. \spc{3}
+
+\extracreditsubproblem Prove $\sqrt{3} \notin \rationals$. \spc{3}
+
+
+\extracreditsubproblem Prove $\abss{\rationals^2} = \abss{\rationals}$. \spc{4}
+
+\extracreditsubproblem Prove $\abss{\reals^2} = \abss{\reals}$. \spc{4}
+
+\end{enumerate}
+
+\iftoggle{professormode}{
+\paragraph{Counting} Problems below are related to counting. We will review the methods learned in class and expand our horizons. \\ \\
+}
+
+\problem In this problem, we imagine rolling different sized-dice. Assume the outcomes (each face of each die) are equally likely for that die.
+
+\iftoggle{professormode}{
+\begin{figure}[htp]
+\centering
+\includegraphics[width=2in, height=1.35in]{dice.jpg}
+\end{figure}
+\FloatBarrier
+}
+
+\noindent Let $R$ be a standard 6-sided die, let $S$ be an 10-sided die, let $T$ be a 12-sided die, and let $U$ be a 18-sided die. What is the sample size of $\Omega$ (\ie $\abss{\Omega}$) for the experiment where we...
+
+
+
+\begin{enumerate}
+\easysubproblem roll $R$ 3 times? \spc{2}
+
+\intermediatesubproblem roll $R$ then $S$ then $T$ then $U$? \spc{2}
+
+\intermediatesubproblem roll $R$ 34 times, then roll $S$ 45 times, then roll $T$ 12 times, then roll $U$ 76 times. \spc{2}
+
+\intermediatesubproblem Roll $R$ and then roll $S$ only if $R$ rolled greater than or equal to 4. Construct the universe of discourse in this situation by enumerating each outcome of $\Omega$ below.  \spc{3}
+
+\intermediatesubproblem Would each $\omega \in \Omega$ here be equally likely? If yes, explain why. If no, provide a counterexample. \spc{3}
+
+\end{enumerate}
+
+\problem Examine the following words and tell me how many \textit{permutations} there are of the letters. We do not care about keeping track of the individual common letters. For example, in the word $dad$, there are two $d's$ and we want to treat the permutation $d_1 d_2 a$ the \textit{same} as $d_2 d_1 a$.
+
+\begin{enumerate}
+\easysubproblem town \spc{1}
+
+\easysubproblem tsktsk (yes, this is a real word!)\spc{1}
+
+\intermediatesubproblem mississippi \spc{2.3}
+
+\hardsubproblem supercalifragilisticexpialidocious \spc{3.0} 
+
+\end{enumerate}
+
+\problem Below is a standard chessboard. Rows one and eight have the following pieces: two rooks, two knights, two bishops, a king and a queen. Rows two and seven have 8 pawns. Rows one and two have all black pieces and rows seven and eight have all white pieces.
+
+\iftoggle{professormode}{
+\begin{figure}[htp]
+\centering
+\includegraphics[width=2.5in]{chess.jpg}
+\end{figure}
+\FloatBarrier
+}
+
+\begin{enumerate}
+\easysubproblem How many ways are there to place the black queen on a white square? \spc{1}
+
+\intermediatesubproblem How many ways are there to set up the pieces in the back ranks of both white and black \ie arrange the two rooks, two knights, two bishops, king and queen on the first row of 8 squares. Note that this game is called ``Fischer Random Chess'' after the famous grandmaster Bobby Fischer who proposed the idea to make standard chess more exciting.  \spc{3}
+
+\hardsubproblem The game progresses and white takes two black pawns and black takes two white pawns. How many ways are there to arrange the pieces on the board? We don't care about pieces of a type being unique (\ie all white pawns are the same, all black rooks are the same, etc).  \spc{5}
+
+\hardsubproblem In the answer to (c) are all arrangements \qu{equally likely} during an actual chess game? Explain why or why not. \spc{3}
+
+\end{enumerate}
+
+\end{document}
