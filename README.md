@@ -52,7 +52,7 @@ My lectures can be listened to as youtube tracks [(all lectures)](https://www.yo
 * Homework 4 [(download)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/homeworks/hw04/hw04.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/homeworks/hw04/hw04.pdf) (due 10/6/16)
 * Homework 3 [(download)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/homeworks/hw03/hw03.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/homeworks/hw03/hw03.pdf) (due 9/20/16)
 * Homework 2 [(download)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/homeworks/hw02/hw02.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/homeworks/hw02/hw02.pdf) (due 9/13/16)-->
-* Homework 1 [(download)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/homeworks/hw01/hw01.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/homeworks/hw01/hw01.pdf) (due 9/6/16)
+* Homework 1 [(download)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/homeworks/hw01/hw01.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/homeworks/hw01/hw01.pdf) (due 9/13/16)
 * Homework 0 [(last few pages of syllabus)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/syllabus/syllabus.pdf?raw=true) (due 9/1/17)
 
 
