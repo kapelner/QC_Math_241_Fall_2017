@@ -16,7 +16,7 @@
 \author{Professor Adam Kapelner} % STUDENTS: DELETE my name and put your name and section here e.g. \author{John Doe, Section A}. MAKE SURE YOU PUT YOUR SECTION HERE!!!!!!!!
 
 \iftoggle{professormode}{
-\date{Due 5PM outside my office KY604, Tuesday, Sep. 6, 2015 \\ \vspace{0.5cm} \small (this document last updated \today ~at \currenttime)}
+\date{Due 5PM outside my office KY604, Wednesday, Sept 13, 2017 \\ \vspace{0.5cm} \small (this document last updated \today ~at \currenttime)}
 }
 
 
@@ -95,20 +95,25 @@ $A \subset A \cup B$
 
 \intermediatesubproblem Express $A \cap B$ only in terms of set subtraction (by using the symbol \qu{\textbackslash}). \spc{2}
 
-\easysubproblem Explain why $A \cup B = B \cup A$ \textit{in English}. \spc{2}
+%\easysubproblem Explain why $A \cup B = B \cup A$ \textit{in English}. \spc{2}
 
 
-\easysubproblem If $\braces{A,B,C}$ are collectively exhaustive, simplify $A \cup B \cup C$. \spc{1}
+\easysubproblem If $\braces{A,B,C}$ are collectively exhaustive, simplify $A \cup B \cup C$ as best as you can. \spc{1}
 
-\intermediatesubproblem If $\braces{A,B,C}$ are collectively exhaustive, simplify $A \cap B \cap C$. \spc{2}
+\intermediatesubproblem If $\braces{A,B,C}$ are collectively exhaustive, simplify $A \cap B \cap C$ as best as you can. \spc{2}
 
-\intermediatesubproblem If $\braces{A,B,C}$ are mutually exclusive, simplify $A \cup B \cup C$. \spc{2}
+\intermediatesubproblem If $\braces{A,B,C}$ are mutually exclusive, simplify $A \cup B \cup C$ as best as you can. \spc{2}
 
-\easysubproblem If $\braces{A,B,C}$ are mutually exclusive, simplify $A \cap B \cap C$. \spc{1}
+\easysubproblem If $\braces{A,B,C}$ are mutually exclusive, simplify $A \cap B \cap C$ as best as you can. \spc{2}
 
-\easysubproblem Prove $\angbraces{a,b} \neq \angbraces{b,a}$ from the definition of the ordered pair. \spc{2}
+%\easysubproblem Prove $\angbraces{a,b} \neq \angbraces{b,a}$ from the definition of the ordered pair. \spc{2}
 
-\easysubproblem Prove $\angbraces{a,b} \neq \angbraces{b,a}$ from the definition of the ordered pair. \spc{2}
+%\easysubproblem Prove $\angbraces{a,b} \neq \angbraces{b,a}$ from the definition of the ordered pair. \spc{2}.
+
+\hardsubproblem In class we played fast and loose with the definitions of set operators. Define $A \cup B$ using set builder notation. You can use the words \qu{or} or \qu{and} or \qu{and / or}. \spc{3}
+
+
+\hardsubproblem Define $A \backslash B$ using set builder notation. You can use the words \qu{or} or \qu{and} or \qu{and / or}. \spc{3}
 
 \extracreditsubproblem Prove DeMorgan's laws from the ground up. \spc{10}
 
@@ -117,19 +122,19 @@ $A \subset A \cup B$
 \problem Consider the sample space $\Omega$ where you flip a fair coin and roll a fair die.
 
 \begin{enumerate}
-\easysubproblem Draw this outcome space in a Venn Diagram. Use a rectangle for $\Omega$.  \spc{3}
+\easysubproblem Draw this outcome space in a Venn Diagram. Use a rectangle for $\Omega$.  \spc{4}
 
 \easysubproblem What is $\abss{\Omega}$?  \spc{1}
 
-\intermediatesubproblem What is the size of the event space? \spc{2}
+\intermediatesubproblem How many unique probability questions could you ask about this random experiment? \spc{2}
 
 \easysubproblem Are singleton sets (sets of size 1) of the outcomes in $\Omega$ mutually exclusive? Explain why. \spc{3}
 
-\easysubproblem Are singleton sets (sets of size 1) of the outcomes in $\Omega$ collectively exhaustive? Explain why.  \spc{3}
+%\easysubproblem Are singleton sets (sets of size 1) of the outcomes in $\Omega$ collectively exhaustive? Explain why.  \spc{3}
 
-\easysubproblem Using our \qu{working definition} of probability, what is the probability of heads or an even number? \spc{3}
+\intermediatesubproblem Using our \qu{working definition} of probability, what is the probability of heads (H) or an even number (E)? \spc{10}
 
-\intermediatesubproblem Describe fully the set $2^{(E \cup T)^C}$ \ie list all its elements. \spc{5}
+%\intermediatesubproblem Describe fully the set $2^{(E \cup T)^C}$ \ie list all its elements. \spc{5}
 
 \end{enumerate}
 
@@ -139,14 +144,14 @@ $A \subset A \cup B$
 
 \intermediatesubproblem Construct $\Omega_E$, the event space of a Euchre deck by using set notation and operations on $\Omega$, the event space of a full deck of cards. Use the ``...'' notation used in class to specify your sets explicitly and use rank and suit such as 4$\clubsuit$ to denote the $\omega$'s $\in \Omega$. Hint: use the Cartestian product (denoted by $\times$) on two sets. \spc{4}
 
-\hardsubproblem Let $B$ be the set of black cards, $F$ the set of face cards and $\spadesuit$ the set of spades. Describe the set on the r.h.s of:
+\hardsubproblem Let $B$ be the set of black cards, $F$ the set of face cards and $\spadesuit$ the set of spades. List all the elements in this set:
 
 \beqn
-\braces{A\spadesuit, 9\heartsuit, K\diamondsuit} \cup \diameter ~\subseteq~ \parens{\parens{B \cap F}^C \cup \spadesuit}^C \backslash \parens{\braces{10\spadesuit, 10\diamondsuit, 10\heartsuit} \cap \Omega}
+\parens{\parens{B \cap F}^C \cup \spadesuit}^C \backslash \parens{\braces{10\spadesuit, 10\diamondsuit, 10\heartsuit} \cap \Omega}
 \eeqn
 \spc{3}
 
-\hardsubproblem Do this problem after completing the last questions since it has to do with counting. Given 5 Euchre cards, how many ways is there to order them \spc{2.5}
+\hardsubproblem Do this problem after completing the last questions since it has to do with counting. Given 5 Euchre cards, how many ways is there to order them? \spc{2.5}
 
 \hardsubproblem You are dealt five Euchre cards out of the 24 total hands. How many ways is there to order all hands?\spc{4}
 
@@ -158,22 +163,22 @@ $A \subset A \cup B$
 \begin{enumerate}
 \easysubproblem Draw a number line for $x$ and shade in the area that represents the set $\bracks{1,3} \cup (4,9]$. If the set includes a number on the endpoint, draw a solid circle \qu{$\bullet$} and if does not include the number, draw an open circle \qu{$\circ$.} \spc{3}
 
-\easysubproblem Draw a number line for $Z \subset \reals$ where $Z := \braces{x \in \reals : |x| > 2}$. This $Z$ notation we'll be using in a couple months when we get to the normal distribution. $Z$ is not $\integers$. \spc{2}
+\easysubproblem Draw a number line for $Z \subset \reals$ where $Z := \braces{x \in \reals : |x| > 2}$. This $Z$ notation we'll be using in a couple months when we get to the normal distribution. Note: $Z$ is not $\integers$; $Z$ is just an arbitrary letter to denote this set and it could have been any other letter. \spc{2}
 
-\easysubproblem Draw on the number line the set $\bracks{0,1} \cap \parens{0, \half} \cap \bracks{0, \fourth}$. \spc{2}
+\easysubproblem Draw on the number line the set $\bracks{0,1} \cap \parens{0, \half} \cap \bracks{0, \fourth}$. \spc{4}
 
-\intermediatesubproblem Find the set $A := \infunion{i}{\bracks{0, \oneover{i}}}$. \spc{3}
+\intermediatesubproblem Find the set $A := \infunion{i}{\bracks{0, \oneover{i}}}$. Hint: draw out the first few expressions and evaluate them to see the pattern. \spc{3}
 
-\hardsubproblem Find the set $B := \infinter{i}{\bracks{0, \oneover{i}}}$.  \spc{3}
+\hardsubproblem Find the set $B := \infinter{i}{\bracks{0, \oneover{i}}}$. Hint: draw out the first few expressions and evaluate them to see the pattern \spc{3}
 
 \easysubproblem Find the set $\integers \backslash \naturals$. \spc{1}
 
 \intermediatesubproblem Describe the set $\reals \backslash \rationals$ as best as you can in English and give an example of an element of this set. \spc{3}
 
-\extracreditsubproblem Prove $\sqrt{3} \notin \rationals$. \spc{3}
+%\extracreditsubproblem Prove $\sqrt{3} \notin \rationals$. \spc{3}
 
 
-\extracreditsubproblem Prove $\abss{\rationals^2} = \abss{\rationals}$. \spc{4}
+%\extracreditsubproblem Prove $\abss{\rationals^2} = \abss{\rationals}$. \spc{4}
 
 \extracreditsubproblem Prove $\abss{\reals^2} = \abss{\reals}$. \spc{4}
 
@@ -236,11 +241,11 @@ $A \subset A \cup B$
 \begin{enumerate}
 \easysubproblem How many ways are there to place the black queen on a white square? \spc{1}
 
-\intermediatesubproblem How many ways are there to set up the pieces in the back ranks of both white and black \ie arrange the two rooks, two knights, two bishops, king and queen on the first row of 8 squares. Note that this game is called ``Fischer Random Chess'' after the famous grandmaster Bobby Fischer who proposed the idea to make standard chess more exciting.  \spc{3}
+\intermediatesubproblem How many ways are there to set up the pieces in the back ranks of both white and black \ie arrange the two rooks, two knights, two bishops, king and queen on the first row of 8 squares. Note that this game is called ``Fischer Random Chess'' after the famous grandmaster Bobby Fischer who proposed the idea to make standard chess more exciting.  \spc{2}
 
-\hardsubproblem The game progresses and white takes two black pawns and black takes two white pawns. How many ways are there to arrange the pieces on the board? We don't care about pieces of a type being unique (\ie all white pawns are the same, all black rooks are the same, etc).  \spc{5}
+\hardsubproblem The game progresses and white takes two black pawns and black takes two white pawns. How many ways are there to arrange the pieces on the board? We don't care about pieces of a type being unique (\ie all white pawns are the same, all black rooks are the same, etc).  \spc{4}
 
-\hardsubproblem In the answer to (c) are all arrangements \qu{equally likely} during an actual chess game? Explain why or why not. \spc{3}
+\hardsubproblem Are all arrangements \qu{equally likely} during an actual chess game? Explain why or why not. \spc{3}
 
 \end{enumerate}
 
