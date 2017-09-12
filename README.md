@@ -40,6 +40,12 @@ My lectures can be listened to as youtube tracks [(all lectures)](https://www.yo
 * Lecture 2 [(audio)](https://youtu.be/qadgUoHEO14) [(Fang Xiaochuan)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/lectures/lec02fang.pdf) [(Dolibeth Estevez)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/lectures/lec02estevez.pdf) [(Maysun Jamil)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/lectures/lec02jamil.pdf) [(anonymous)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/lectures/lec02anon.pdf) [(Prof)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/lectures/lec02kap.pdf)
 * Lecture 1 [(audio)](https://youtu.be/qadgUoHEO14) [(Ravneet Kaur)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/lectures/lec01kaur.pdf) [(Fang Xiaochuan)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/lectures/lec01fang.pdf) [(Mike Morcerf)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/lectures/lec02morcerf.pdf) [(Dolibeth Estevez)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/lectures/lec01estevez.pdf)  [(Michelle Sawh)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/lectures/lec01sawh.pdf) [(Maysun Jamil)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/lectures/lec01jamil.pdf) [(anonymous)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/lectures/lec01anon.pdf) [(Prof)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/lectures/lec01kap.pdf)
 
+
+## Martin Sendrowicz's Notes
+
+[(lec 1&2)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/marcin/lec0102.pdf)
+
+
 ## Homeworks
 
 <!--
