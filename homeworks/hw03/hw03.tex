@@ -1,0 +1,241 @@
+\documentclass[12pt]{article}
+
+\include{preamble}
+
+\newtoggle{spacingmode}
+\toggletrue{spacingmode}  %STUDENTS: DELETE or COMMENT this line
+
+\newtoggle{professormode}
+\toggletrue{professormode} %STUDENTS: DELETE or COMMENT this line
+
+\newcommand{\spc}[1]{\iftoggle{spacingmode}{\\ \vspace{#1cm}}}
+
+
+\title{MATH 241 Fall 2017 Homework \#3}
+
+\author{Professor Adam Kapelner} % STUDENTS: DELETE my name and put your name and section here e.g. \author{John Doe, Section A}. MAKE SURE YOU PUT YOUR SECTION HERE!!!!!!!!
+
+\iftoggle{professormode}{
+\date{Due 3PM under my office door KY604, Monday, Oct 2, 2017 \\ \vspace{0.5cm} \small (this document last updated \today ~at \currenttime)}
+}
+
+
+\renewcommand{\abstractname}{Instructions and Philosophy}
+
+\begin{document}
+\maketitle
+
+\iftoggle{professormode}{
+\begin{abstract}
+
+The path to success in this class is to do many problems. Unlike other courses, exclusively doing reading(s) will not help. Coming to lecture is akin to watching workout videos; thinking about and solving problems on your own is the actual ``working out''.  Feel free to \qu{work out} with others; \textbf{I want you to work on this in groups.}
+
+Reading is still \textit{required}. For this homework set, read the section about sample spaces in Chapter 2 and relevant parts of Chapter 1 in Ross. Chapter references are from the 7th edition.
+
+The problems below are color coded: \ingreen{green} problems are considered \textit{easy} and marked \qu{[easy]}; \inorange{yellow} problems are considered \textit{intermediate} and marked \qu{[harder]}, \inred{red} problems are considered \textit{difficult} and marked \qu{[difficult]} and \inpurple{purple} problems are extra credit. The \textit{easy} problems are intended to be ``giveaways'' if you went to class. Do as much as you can of the others; I expect you to at least attempt the \textit{difficult} problems.
+
+This homework is worth 100 points but the point distribution will not be determined until after the due date. See syllabus for the policy on late homework.
+
+Up to 15 points are given as a bonus if the homework is typed using \LaTeX. Links to instaling \LaTeX~and program for compiling \LaTeX~is found on the syllabus. You are encouraged to use \url{overleaf.com}. If you are handing in homework this way, read the comments in the code; there are two lines to comment out and you should replace my name with yours and write your section. If you are asked to make drawings, you can take a picture of your handwritten drawing and insert them as figures or leave space using the \qu{$\backslash$vspace} command and draw them in after printing or attach them stapled.
+
+The document is available with spaces for you to write your answers. If not using \LaTeX, print this document and write in your answers. I do not accept homeworks not on this printout. Keep this first page printed for your records. Write your name and section below.
+
+\end{abstract}
+
+\thispagestyle{empty}
+\vspace{1cm}
+NAME: \line(1,0){220} ~~SECTION (A, B or C): \line(1,0){35}
+\pagebreak
+}
+
+
+
+\problem{We will be looking into the long term frequency definition here. For this problem, you must have \texttt{R} installed. Please download it from \url{http://cran.r-project.org/} (there are links for Windows, MAC and Linux) and then double-click to open an \texttt{R} console.}
+
+\begin{enumerate}
+
+\easysubproblem{To calculate combinations, use the \texttt{choose(n,k)} function. Calculate the number of five-card hands from a standard deck by copying the following code into \texttt{R} and then pressing enter:}
+
+\begin{knitrout}
+\begin{kframe}
+\begin{verbatim}
+choose(52, 5)
+\end{verbatim}
+\end{kframe}
+\end{knitrout}
+
+Please write down the answer. Is the answer the same as we computed in class? \spc{2.5}
+
+\easysubproblem{Verify the probability in class of a ``full house'' by copying the following code into \texttt{R} and then pressing enter:}
+
+\begin{knitrout}
+\begin{kframe}
+\begin{verbatim}
+choose(13, 1) * choose(4, 3) * choose(12, 1) * choose(4, 2) / 
+  choose(52, 5)
+\end{verbatim}
+\end{kframe}
+\end{knitrout}
+
+Write down the answer as a \textit{percentage}. \spc{3.5}
+
+\intermediatesubproblem{\inred{This PDF must be downloaded to do this problem.} We are going to do a little experiment to explore the definition of probability as a limiting frequency. We will be looking at the context of flipping a coin and getting heads. Remember the definition was
+
+\beqn
+\prob{\braces{H}} = \limitn \frac{\displaystyle \sum_{i=1}^n \indic{\omega_i \in \braces{H}}}{n}
+\eeqn
+
+(where $\indic{T}$ is the \qu{indicator function} which equals 1 when the expression $T$ is true and 0 if the expression $T$ is false). We will run a simulation with large values of $n$. Copy and paste the following code into your \texttt{R} terminal:}
+
+\begin{knitrout}
+\begin{kframe}
+\begin{verbatim}
+N = 30000
+sims = sample(0:1, N, replace = T)
+freqs_by_n = array(NA, N)
+for (n in 1 : N){
+  freqs_by_n[n] = sum(sims[1:n]) / n
+}
+plot(10:N, 
+  freqs_by_n[10:N], 
+  xlim = c(10, N), 
+  ylim = c(0.40, 0.60), 
+  pch = ".", 
+  xlab = "number of samples",
+  ylab = "frequency of heads",
+  main = "P(H) as a limiting frequency: 30,000 samples")
+abline(h = 0.5, col = "blue")
+freqs_by_n[N]
+#last line placeholder
+\end{verbatim}
+\end{kframe}
+\end{knitrout}
+
+\inred{If the code throws an error, download the PDF to your computer and try copying and pasting again. It does NOT work from a browser window. The PDF must be downloaded.}
+
+The console should have popped up a plot illustrating a \textit{real} statistical simulation. Each time you run this code it will be different. You can compare plots with your friends but take note that they will not look exactly the same. Print this out and attach it to your homework. If you are using \LaTeX, you can include the figure into the PDF.
+
+From the title of the plot and the x and y axes, tell a story about what is going on here \textit{in English}. \spc{2.5}
+
+\easysubproblem{What is the limiting frequency of heads after 30,000 coin flips to 3 decimals based on the simulation in the previous problem? (that is the number that appears in the console directly after ``\texttt{$>$ freqs\_by\_n[N]}''). Write it below and comment on its value.}\spc{1.5}
+
+\end{enumerate}
+
+\problem{We will follow up here with questions on the Monte Hall game.
+
+\iftoggle{professormode}{
+\begin{figure}[htp]
+\centering
+\includegraphics[width=1.9in]{montehall.jpg}
+\end{figure}
+%\FloatBarrier
+%\vspace{-0.7cm}
+}
+
+\begin{enumerate}
+
+%\easysubproblem{Explain clearly how the gameshow is played --- all the rules of the host and the contestant.}\spc{4}
+
+
+\intermediatesubproblem{In class, we used a tree to show the probability of winning is 2/3 if you switch and the car was in door 1. Complete the tree for if the car was in all doors initially and show the probability of winning is 2/3. It will take the whole page.}\spc{18}
+
+%\hardsubproblem{Now imagine a variant of the game is played in the following way: there are four doors, you pick one and the game show host opens up two doors to reveal two goats. You now have the option to keep the door you selected initially or switch to the other door that remains closed. Use Bayes Theorem (not a tree). We will do this in class next Thursday.}\spc{10}
+
+\extracreditsubproblem{Imagine the variant where there are now $n$ doors. You choose 1 and the game show host opens up $n-2$ doors to reveal $n-2$ goats. You have the option to keep the door you selected initially or switch to the other closed door. What is the probability of winning if you switch?}\spc{10}
+
+\end{enumerate}
+
+\problem{New York is a \qu{concrete jungle where dreams are made of.} To this extent, a young upstart tries to drum up business in three of the tallest buildings in the city. Below from left to right are pictured One World Trade Center (104 floors), the Empire State Building (82 occupied floors) and the Bank of America Tower (55 floors).
+
+\iftoggle{professormode}{
+\begin{figure}[htp]
+\centering
+\includegraphics[width=3in]{buildings.png}
+\end{figure}
+\FloatBarrier
+}
+
+\noindent Consider the case where this person enters one of the three buildings randomly and goes to a random floor.}
+
+ 
+
+\begin{enumerate}
+\easysubproblem{Draw a probability tree of this random event. Use ``...'' notation so you don't need to draw hundreds of lines.}\spc{14}
+
+\easysubproblem{Are the building selection and floor selection \textit{independent} (\ie \textit{informationally irrelevant})? Justify your answer using the definition of statistical independence.}\spc{0.5}
+
+\easysubproblem{What is the probability of the businessman winding up on floor 23 of One World Trade Center on a given day? }\spc{5}
+
+\intermediatesubproblem{What is the probability of the businessman winding up on floor 23 of any building on a given day? }\spc{3}
+
+\hardsubproblem{If the businessman is on floor 50, what is the probability he is in the Bank of America Tower? }\spc{3}
+
+\extracreditsubproblem{In one week, the businessman was on floor 12, 15 18, 32 and 59. What is the probability he visited One World Trade Center for more than one of those days? }\spc{6}
+
+\end{enumerate}
+
+
+
+\problem{Probability is rooted in gambling and thus we will be analyzing some gambling games. We will introduce the game of Roulette here. Basically, there's a ball that is dropped onto a spinning wheel with pockets for the ball to fall once the wheel and ball run out of momentum. There are 18 red pockets and 18 black pockets. There are two flavors of the game:
+
+\begin{itemize}
+\item European: There is one additional pocket colored green and labeled 0 (for a total of 18+18+1=37 pockets). An example of this wheel is pictured below on the left.
+\item American: There are two additional pockets colored green labeled 0 and 00 (for a total of 18+18+2=38 pockets). An example of this wheel is pictured below on the right.
+\end{itemize}
+
+The gambler can make bets on any of the spaces as well as red (R), black (B), green (G), an odd number, an even number and a slew of other exotic type bets which we won't enumerate. We will be analyzing payoffs when we get to random variables next week but we will not be discussing them now.}
+
+\iftoggle{professormode}{
+\begin{figure}[htp]
+\centering
+\includegraphics[width=4in]{roulette.png}
+\end{figure}
+\FloatBarrier
+}
+
+\begin{enumerate}
+\easysubproblem{What is the probability of the ball landing in a black pocket? Calculate for both European and American roulette.}\spc{2}
+
+\easysubproblem{What is the probability of the ball landing in a green pocket? Calculate for both European and American roulette.}\spc{2}
+
+\easysubproblem{What is the probability you see RRBBBRGRBB in 10 spins in Las Vegas?}\spc{2}
+
+\easysubproblem{In the 18 red pockets there are 9 even numbered pockets and 9 odd numbered pockets. What is the probability of getting a pocket wihich is both Red and Odd in Las Vegas?}\spc{1}
+
+\easysubproblem{What is the probability you see a spin that is both Red and Green in Las Vegas?}\spc{0.5}
+
+\easysubproblem{What is the probability you see a spin that is Red or Green in Amsterdam?}\spc{0.5}
+
+
+\easysubproblem{In Las Vegas, you play the game 10 times and always bet on black. What is the probability you win all 10 times?}\spc{2}
+
+
+\intermediatesubproblem{In Las Vegas, you see BBBBBBBBBB. Conditional on seeing this event, what is the probability the next spin is R?}\spc{2}
+
+\intermediatesubproblem{In Las Vegas, what is the probability of BBBBBBBBBBR? This is the same situation as in the previous question, but framed differently (in order to confuse you).}\spc{2}
+
+\hardsubproblem{In Las Vegas, you play the game 10 times and always bet on black. What is the probability you win \textit{at least} once?}\spc{10}
+
+\end{enumerate}
+
+\problem{We will review the hats problem.
+
+\iftoggle{professormode}{
+\begin{figure}[htp]
+\centering
+\includegraphics[width=2in]{hats.jpg}
+\end{figure}
+\FloatBarrier
+}
+
+ 
+
+\begin{enumerate}
+\easysubproblem{37 people enter a room wearing a hat. They all throw their hat into the center (like picture above) and everyone puts on a random hat. What is the approximate probability no one gets their hat? No need to derive it}\spc{1}
+
+
+\easysubproblem{42 people enter a room wearing a hat. They all throw their hat into the center (like picture above) and everyone puts on a random hat. What is the approximate probability at least one gets their hat? No need to derive it}\spc{1}
+
+\end{enumerate}
+
+\end{document}

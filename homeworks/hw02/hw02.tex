@@ -1,0 +1,267 @@
+\documentclass[12pt]{article}
+
+\include{preamble}
+
+\newtoggle{spacingmode}
+\toggletrue{spacingmode}  %STUDENTS: DELETE or COMMENT this line
+
+\newtoggle{professormode}
+\toggletrue{professormode} %STUDENTS: DELETE or COMMENT this line
+
+\newcommand{\spc}[1]{\iftoggle{spacingmode}{\\ \vspace{#1cm}}}
+
+
+\title{MATH 241 Fall 2017 Homework \#2}
+
+\author{Professor Adam Kapelner} % STUDENTS: DELETE my name and put your name and section here e.g. \author{John Doe, Section A}. MAKE SURE YOU PUT YOUR SECTION HERE!!!!!!!!
+
+\iftoggle{professormode}{
+\date{Due 5PM under my office door KY604, Monday, Sept 25, 2017 \\ \vspace{0.5cm} \small (this document last updated \today ~at \currenttime)}
+}
+
+
+\renewcommand{\abstractname}{Instructions and Philosophy}
+
+\begin{document}
+\maketitle
+
+\iftoggle{professormode}{
+\begin{abstract}
+
+The path to success in this class is to do many problems. Unlike other courses, exclusively doing reading(s) will not help. Coming to lecture is akin to watching workout videos; thinking about and solving problems on your own is the actual ``working out''.  Feel free to \qu{work out} with others; \textbf{I want you to work on this in groups.}
+
+Reading is still \textit{required}. For this homework set, read the section about sample spaces in Chapter 2 and relevant parts of Chapter 1 in Ross. Chapter references are from the 7th edition.
+
+The problems below are color coded: \ingreen{green} problems are considered \textit{easy} and marked \qu{[easy]}; \inorange{yellow} problems are considered \textit{intermediate} and marked \qu{[harder]}, \inred{red} problems are considered \textit{difficult} and marked \qu{[difficult]} and \inpurple{purple} problems are extra credit. The \textit{easy} problems are intended to be ``giveaways'' if you went to class. Do as much as you can of the others; I expect you to at least attempt the \textit{difficult} problems.
+
+This homework is worth 100 points but the point distribution will not be determined until after the due date. See syllabus for the policy on late homework.
+
+Up to 15 points are given as a bonus if the homework is typed using \LaTeX. Links to instaling \LaTeX~and program for compiling \LaTeX~is found on the syllabus. You are encouraged to use \url{overleaf.com}. If you are handing in homework this way, read the comments in the code; there are two lines to comment out and you should replace my name with yours and write your section. If you are asked to make drawings, you can take a picture of your handwritten drawing and insert them as figures or leave space using the \qu{$\backslash$vspace} command and draw them in after printing or attach them stapled.
+
+The document is available with spaces for you to write your answers. If not using \LaTeX, print this document and write in your answers. I do not accept homeworks not on this printout. Keep this first page printed for your records. Write your name and section below.
+
+\end{abstract}
+
+\thispagestyle{empty}
+\vspace{1cm}
+NAME: \line(1,0){220} ~~SECTION (A, B or C): \line(1,0){35}
+\pagebreak
+}
+
+\iftoggle{professormode}{
+\paragraph{More counting} These counting questions will give you more practice in computing probabilities. Due to computations involving large factorials, we will also review Stirling's Approximation.\\ \\
+}
+
+
+\problem{We have 4 blue marbles, 4 green marbles, 2 orange marbles, and 2 red marbles. For the following questions, if you are using ``choose notation'', please write your choose notation, then write the formula using factorials, then write the actual number after you compute it.}
+
+\iftoggle{professormode}{
+\begin{figure}[htp]
+\centering
+\includegraphics[width=2.1in]{marbles.jpg}
+\end{figure}
+\FloatBarrier
+}
+
+\begin{enumerate}
+\easysubproblem{Viewing all the marbles as \textit{unique}, how many ways are there to order the marbles? Note that \qu{order} is another way of saying \qu{permute.}}\spc{2}
+
+
+\intermediatesubproblem{Viewing all marbles of the same color as \textit{interchangeable}, how many ways is there to order the marbles?}\spc{2}
+
+\extracreditsubproblem{If I pick 4 marbles at random from the collection, how many ways are there to get two-of-a-kind \ie two marbles of one color and two marbles of a different color.}\spc{7}
+
+\end{enumerate}
+
+\problem{Imagine you have a bag of 10 cards where 6 are blue and 4 are red. A \qu{draw} means one card is taken out of the bag at random and the color is revealed. If the problem asks \qu{what is the probability,} this means an explicit computation is required unless otherwise stated.}
+
+\iftoggle{professormode}{
+\begin{figure}[htp]
+\centering
+\includegraphics[width=1.2in]{red_blue.png}
+\end{figure}
+\FloatBarrier
+}
+
+\begin{enumerate}
+\easysubproblem{What is the probability of getting a blue card when drawing one card?}\spc{1}
+
+\easysubproblem{What is the probability of drawing 3 red cards in a row \textit{without replacement}?} \spc{1.5}
+
+\intermediatesubproblem{Five cards are drawn. What is the probability of having 3 reds and 2 blues without regards to any order of the cards?} \spc{2}
+
+\hardsubproblem{Five cards are drawn. What is the probability of having 3 reds and 2 blues in that order? Think carefully about the numerator and denominator in this probability computation.} \spc{5}
+
+%\intermediatesubproblem{Five cards are drawn from a new bag with 100 cards where 60 are blue and 40 are red. What is the probability of having 3 reds and 2 blues without regards to any order of the cards?} \spc{3}
+
+%\intermediatesubproblem{Five cards are drawn from a new bag with 1000 cards where 600 are blue and 400 are red. What is the probability of having 3 reds and 2 blues without regards to any order of the cards?} \spc{4}
+
+\end{enumerate}
+
+\problem{Imagine you are putting together musical performances and you are employing musicians at random. There are many available for hire: 23 guitarists, 15 vocalists, 6 drummers, 14 bassists, 8 violinists, 9 violas, 6 cellists.}
+
+
+\iftoggle{professormode}{
+\begin{figure}[htp]
+\centering
+\includegraphics[width=2in]{musicians.png}
+\end{figure}
+\FloatBarrier
+}
+
+\begin{enumerate}
+\easysubproblem{If we hire 4 musicians at random, what is the probability we get a rock band (a vocalist, a guitarist, a bassist and a drummer)?} \spc{3}
+
+\easysubproblem{If we hire 4 musicians at random, what is the probability we get a string quartet (two violinists, 1 cellist and one violist)?} \spc{3}
+
+\easysubproblem{If we hire 4 musicians at random, what is the probability we get a doowop group (four vocalists)?} \spc{7}
+
+\easysubproblem{We now move to a different city and the musicians for hire are different. Here, we have 10 guitarists, 10 vocalists, 10 drummers, 10 bassists. What is the probability we form a rock band when hiring four musicians at random?} \spc{3}
+
+\hardsubproblem{Given the same situation in part (d), what is the probability we get two pairs of musicians (e.g. two guitarists and two bassists or two drummers and two bassists)?} \spc{2.8}
+
+\hardsubproblem{Given the same situation in part (d), what is the probability we get all four musicians be the same type?} \spc{3}
+
+\end{enumerate}
+
+%\problem{Computations of combinations and permutations is impossible for a computer due to the factorial computations. In this problem, we investigate Stirling's formula.}
+%
+%\begin{enumerate}
+%\easysubproblem{Use the natural log to derive an expression for $\binom{1500}{300}$ using sums by recalling that $\natlog{n!} = \sum_{i=1}^n \natlog{i}$. Do not compute. Leave in terms of sums and natural logs.} \spc{4}
+%
+%\easysubproblem{Show that Stirling's approximation is equivalent to the expression I wrote in class:
+%
+%\beqn
+%\natlog{n!} \approx \half\natlog{2\pi} + \parens{n + \half}\natlog{n} - n
+%\eeqn}
+%\spc{4}
+%
+%\hardsubproblem{Use the expression in (c) to approximate the probability of getting 300 Heads in 1500 coin flips.} \spc{10}
+%
+%\end{enumerate}
+
+\problem{Combinations are not only useful in probability problems. They come up all over mathematics.}
+
+\begin{enumerate}
+
+
+\easysubproblem{Below is \qu{Pascal's Triangle} up to $n=4$.
+
+\begin{table}[htp]
+\centering
+\begin{tabular}{rccccccccc}
+$n=0$:&    &    &    &    &  1\\\noalign{\smallskip\smallskip}
+$n=1$:&    &    &    &  1 &    &  1\\\noalign{\smallskip\smallskip}
+$n=2$:&    &    &  1 &    &  2 &    &  1\\\noalign{\smallskip\smallskip}
+$n=3$:&    &  1 &    &  3 &    &  3 &    &  1\\\noalign{\smallskip\smallskip}
+$n=4$:&  1 &    &  4 &    &  6 &    &  4 &    &  1\\\noalign{\smallskip\smallskip}
+\end{tabular}
+\end{table}
+
+Explain why the 6 in the middle of the $n=4$ row is equivalent to $\binom{4}{2}$ by using the fact proved in class.} \spc{2}
+
+\easysubproblem{In the expansion $(a+b)^{100}$, how many terms are of the form $a^2 b^{98}$?} \spc{1}
+
+\extracreditsubproblem{Prove the binomial theorem for arbitrary $n \in \naturals$.} \spc{10}
+
+\end{enumerate}
+
+\iftoggle{professormode}{
+\paragraph{Philosophy of Probability} We covered many definitions of probability and discussed some philosophy of probability.\\ \\ 
+}
+
+\problem{Answer the following questions by writing a paragraph or two \textit{in English}.}
+
+\begin{enumerate}
+\easysubproblem{Previously we defined probability as $\prob{A} := \frac{|A|}{|\Omega|}$. Describe a situtation where this fails to produce the correct probability that is not the spinner used in lecture.}\spc{4}
+
+\easysubproblem{Which definition of probability does the book use and why do you think the authors chose this definition?}\spc{3}
+
+\easysubproblem{Give an example of an event whose probability cannot be approximated by the limiting frequency.} \spc{1.5}
+
+\extracreditsubproblem{Who picks $\omega \in \Omega$ \ie the outcome from the set of possible outcomes in the universe? This is an issue we ignored. Discuss your thoughts.} \spc{5}
+
+
+\easysubproblem{What are some problems with the long run frequency definition of probability?} \spc{3}
+
+\intermediatesubproblem{How did Chevalier de Mere in 1654 know that the \\ $\prob{\text{one or more double sixes in 24 rolls of two dice}} < \half$?} \spc{2}
+
+\easysubproblem{What are some problems with the propensity definition of probability?} \spc{2}
+
+\extracreditsubproblem{What idea(s) inspired Karl Popper to invent the propensity definition?} \spc{2}
+
+\easysubproblem{What is the main problem with the subjective definition of probability?} \spc{2}
+
+%\easysubproblem{If all information was known, would there still be randomness? Yes/no is fine.} \spc{1}
+
+\easysubproblem{According to Laplace (and his interpretation of Newton), if all information was known about physical systems including all laws and all initial conditions, would there be randomness? Yes/no and discuss.} \spc{2}
+
+\hardsubproblem{According to Laplace, what is randomness? I've uploaded Laplace's quote in lecture 5 on the course homepage. You can answer this in a few words.} \spc{1}
+
+\hardsubproblem{Knowing what we known in the 21st century, if all information was known about physical systems including all laws and all initial conditions, would there be randomness? If so, what theory has demonstrated evidence for this?} \spc{2}
+
+\hardsubproblem{What is the prevailing historical theory about why probability wasn't formalized using mathematics prior to the 1600's?} \spc{2}
+
+\end{enumerate}
+
+
+\problem{Assume that the overall probability of contracting breast cancer in a 45 year old American woman is 0.1\% on average (or one in a thousand). A typical diagnostic test is a mammographic scane. Assume also that a mammograph scan reading is 82\% \textit{sensitive} on average and 96\% \textit{specific} on average. Here, \qu{sensitive} means among patients with cancer, the probability that the test is positive and \qu{specific} means among patients without cancer, the probability that the test is negative.}
+
+
+\begin{enumerate}
+\easysubproblem{Denote cancer as $C$ and no cancer as $C^C$ and mammography positive as $T$ and mammography negative as $T^C$. What is $\prob{C}$, $\cprob{T}{C}$ and $\cprob{T^C}{C^C}$? These are readable from the problem statement above. You must use this notation going forward to get full credit.}\spc{1}
+
+\easysubproblem{Now solve for $\prob{C^C}$, $\cprob{T^C}{C}$ and $\cprob{T}{C^C}$ using the complement rule.}\spc{2}
+
+\easysubproblem{Draw a tree with two branches: $C$ vs. $C^C$ and then draw a second set of branches for $T$ vs. $T^C$ (four branches). Mark all four conditional probabilities in this tree's configuration and all four marginal probabilities on the right. Check your answers by assuring that these four marginal probabilities form a partition of $\prob{\Omega} = 1$.}\spc{9}
+
+\easysubproblem{Draw the \qu{inverted} tree. It has two branches: $T$ vs. $T^C$ and then a second set of branches for $C$ vs. $C^C$ (four branches). Mark all four conditional probabilities in this tree's configuration and all four marginal probabilities on the right. Check your answers by assuring that these four marginal probabilities form a partition of $\prob{\Omega} = 1$.}\spc{9}
+
+\easysubproblem{Draw $\Omega$ as a rectange (that takes up the whole width of the page) with $T$ and $C$ inside. Try to draw to scale.}\spc{4}
+
+
+\intermediatesubproblem{What is $\prob{T}$? Use the law of total probability here and explain what the law is and how exactly you're using it to solve this problem.}\spc{7}
+
+
+
+\hardsubproblem{What does $\prob{T}$ mean? Answer \textit{in English}.}\spc{3}
+
+\intermediatesubproblem{Now the money question: if a woman is scanned and tests positive, what is the probability she has cancer? Use the notation I have provided and answer as a \textit{percentage} so it is more viscerally interpretable to you. Do not be alarmed if the answer surprises you.}\spc{3}
+
+\intermediatesubproblem{You may have done the previous question over and over and gotten frustrated. Your answer is probably correct though. Can you explain why it's so low? Comment on the usefulness of mammography given the post test probability of cancer which you computed.}\spc{4}
+
+\easysubproblem{Prove through the rules in class that $\prob{T} = \prob{C,T} + \cprob{T}{C^C}\prob{C^C}$. This is the denominator that is making part (g) so small.}\spc{4}
+
+\intermediatesubproblem{You have shown that $\prob{C,T}$ is trivially small but $\prob{C^C}$ is huge. So what is in actuality driving the low answer in (g)?}\spc{4}
+
+\intermediatesubproblem{If a woman is scanned and tests positive, what is the probability she does \textit{not} have cancer?}\spc{3}
+
+\intermediatesubproblem{If a woman is scanned and tests negative, what is the probability she does \textit{not} have cancer?}\spc{5}
+
+\intermediatesubproblem{What is the ratio of $\frac{\cprob{C}{T}}{\cprob{C}{T^C}}$? What does this ratio mean? What does your answer suggest? Is it possible these scans aren't such a terrible diagnostic tool after all? }\spc{8}
+
+\end{enumerate}
+
+
+
+%\problem{We will get our feet wet with basic \qu{axioms} and theorems. Assume all capital letters are sets. If the problem asks you to prove a fact, you may only use your knowledge of set theory and the definition of $\prob{\cdot}$ given in the book / lecture. Most of the answers are in the book or in my lecture notes. Try to do them yourself and only use the book if you are having trouble.}
+
+
+%\iftoggle{professormode}{
+%\begin{figure}[htp]
+%\centering
+%\includegraphics[width=4in]{axioms.png}
+%\end{figure}
+%\FloatBarrier
+%}
+
+
+%\begin{enumerate}
+%\easysubproblem{List (1)  all assumptions prior to and (2) the three conditions that make $\prob{\cdot}$, the set function that returns a probability. These latter three conditions are also known as the \qu{axioms of probability.}} \spc{3.5}
+%
+%%\extracreditsubproblem{Explain why the three conditions are not technically axioms.} \spc{2}
+%
+%%\easysubproblem{Prove that if $A_1$ and $A_2$ are disjoint (mutually exclusive), $\prob{A_1 \cup A_2} = \prob{A_1} + \prob{A_2}$.} \spc{1.5}
+%\end{enumerate}
+
+\end{document}
