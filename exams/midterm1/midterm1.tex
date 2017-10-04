@@ -1,0 +1,388 @@
+\documentclass[12pt]{article}
+
+\include{preamble}
+
+\title{Math 241 Fall 2017 \\ Midterm Examination One}
+\author{Professor Adam Kapelner}
+
+\date{October 3/4, 2017}
+
+\begin{document}
+\maketitle
+
+\noindent Full Name \line(1,0){255} ~~~ Section (A, B or C)~ \line(1,0){30}
+
+\thispagestyle{empty}
+
+\section*{Code of Academic Integrity}
+
+\footnotesize
+Since the college is an academic community, its fundamental purpose is the pursuit of knowledge. Essential to the success of this educational mission is a commitment to the principles of academic integrity. Every member of the college community is responsible for upholding the highest standards of honesty at all times. Students, as members of the community, are also responsible for adhering to the principles and spirit of the following Code of Academic Integrity.
+
+Activities that have the effect or intention of interfering with education, pursuit of knowledge, or fair evaluation of a student's performance are prohibited. Examples of such activities include but are not limited to the following definitions:
+
+\paragraph{Cheating} Using or attempting to use unauthorized assistance, material, or study aids in examinations or other academic work or preventing, or attempting to prevent, another from using authorized assistance, material, or study aids. Example: using a cheat sheet in a quiz or exam, altering a graded exam and resubmitting it for a better grade, etc.
+\\
+
+\noindent I acknowledge and agree to uphold this Code of Academic Integrity. \\
+
+\begin{center}
+\line(1,0){250} ~~~ \line(1,0){100}\\
+~~~~~~~~~~~~~~~~~~~~~signature~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ date
+\end{center}
+
+\normalsize
+
+\section*{Instructions}
+
+This exam is seventy five minutes and closed-book. You are allowed one page (front and back) of a \qu{cheat sheet.} You may use a graphing calculator of your choice. Please read the questions carefully. If the question reads \qu{compute,} this means the solution will be a number otherwise you can leave the answer in choose, permutation, exponent, factorial or any other notation which could be resolved to a number with a computer. I advise you to skip problems marked \qu{[Extra Credit]} until you have finished the other questions on the exam, then loop back and plug in all the holes. I also advise you to use pencil. The exam is 100 points total plus extra credit. Partial credit will be granted for incomplete answers on most of the questions. \fbox{Box} in your final answers. Good luck!
+
+\pagebreak
+
+\problem Below are some multiple choice theoretical exercises. Circle the correct answer.
+
+
+\benum
+\subquestionwithpoints{3} If non-empty events $A_1, A_2, A_3$ are disjoint, then the statement \qu{$\prob{\cup_{i=1}^3 A_i} = \prob{A_1} + \prob{A_2} + \prob{A_3}$} is
+
+\begin{enumerate}[(i)]
+\item always true
+\item sometimes true
+\item never true
+\end{enumerate}
+
+\subquestionwithpoints{3} If non-empty events $A_1, A_2, A_3$ are disjoint, then the statement \qu{$\prob{\cap_{i=1}^3 A_i} = \prob{A_1} + \prob{A_2} + \prob{A_3}$} is
+
+\begin{enumerate}[(i)]
+\item always true
+\item sometimes true
+\item never true
+\end{enumerate}
+
+\subquestionwithpoints{3} If non-empty events $A_1, A_2, A_3$ are disjoint, then the statement \qu{$\prob{\cap_{i=1}^3 A_i} = \prob{A_1}\prob{A_2}\prob{A_3}$} is
+
+\begin{enumerate}[(i)]
+\item always true
+\item sometimes true
+\item never true
+\end{enumerate}
+
+\subquestionwithpoints{3} If non-empty events $A_1, A_2, A_3$ are disjoint, then the statement \qu{$A_1, A_2, A_3$ collectively exhaust the experimental outcome space $\Omega$} is
+
+\begin{enumerate}[(i)]
+\item always true
+\item sometimes true
+\item never true
+\end{enumerate}
+
+\subquestionwithpoints{3} If non-empty events $A_1, A_2, A_3$ are disjoint, then the statement \qu{$\cprob{A_1}{A_2} = \prob{A_1}$} is
+
+\begin{enumerate}[(i)]
+\item always true
+\item sometimes true
+\item never true
+\end{enumerate}
+
+
+\subquestionwithpoints{3} If non-empty events $A_1, A_2, A_3$ are \emph{independent}, then the statement \qu{$\prob{\cap_{i=1}^3 A_i} = \prob{A_1}\prob{A_2}\prob{A_3}$} is
+
+\begin{enumerate}[(i)]
+\item always true
+\item sometimes true
+\item never true
+\end{enumerate}
+
+\subquestionwithpoints{3} If non-empty events $A_1, A_2, A_3$ are independent, then the statement \qu{$\cprob{A_1}{A_2} = \prob{A_1}$} is
+
+\begin{enumerate}[(i)]
+\item always true
+\item sometimes true
+\item never true
+\end{enumerate}
+
+\subquestionwithpoints{3} If non-empty events $A_1, A_2, A_3$ are independent, then the statement \qu{$\cprob{A_1}{A_2} = \cprob{A_1}{A_3}$} is
+
+\begin{enumerate}[(i)]
+\item always true
+\item sometimes true
+\item never true
+\end{enumerate}
+
+\eenum
+
+\problem The game of Tic-Tac-Toe is played with two players. The first player has the mark \qu{X} and the second player has the mark \qu{O}. They play on the following 3 $\times  $ 3 board with nine \emph{distinct} spaces for a player to place their mark:
+
+\begin{table}[htp]
+\centering
+\Huge
+\begin{tabular}{c|c|c}
+  ~~ & ~~ & ~~ \\      \hline
+  ~~ & ~~ & ~~ \\      \hline
+  ~~ & ~~ & ~~
+\end{tabular}
+\end{table}
+
+\noindent Each player takes turns by writing their mark in one of the nine spaces until one player gets \qu{3 in a row} which means three of their mark in a row, a column, or diagonally across. So an X is placed, then a O is placed, then an X is placed, then an O is placed, etc until one player wins or until all spaces are filled with no winner.
+
+\benum
+\subquestionwithpoints{3} How many ways are there for the first player to place their mark? \spc{1}
+
+\subquestionwithpoints{3} How many ways are there for the first two turns to be played? In other words, how many ways are there to place one X and one O? \spc{2}
+
+\subquestionwithpoints{4} Imagine the marks are created by a computer randomly and the game doesn't stop upon a win. Assume all 9 marks are written (still X then O then X then O, etc). How many possible boards are there with all 9 spaces occupied? \spc{4}
+
+\eenum
+
+\problem Professor Bob's library of Harvard classics is pictured below:
+
+\begin{figure}[htp]
+\centering
+\includegraphics[width=4in]{books.png}
+\end{figure}
+
+\noindent He has 16 red books, 9 blue books, 7 green blooks and 10 purple books.
+
+\benum
+\subquestionwithpoints{4} If he randomly takes 4 books off the shelf \emph{with} replacement, what is the probability he gets all red books? \spc{3}
+
+\subquestionwithpoints{4} If he randomly takes 4 books off the shelf \emph{without} replacement, what is the probability he gets all red books? \spc{3}
+
+\subquestionwithpoints{4}  If he randomly takes 4 books off the shelf without replacement, what is the probability he gets two blue books and two purple books? \spc{3}
+
+\subquestionwithpoints{5}  If he randomly takes 4 books off the shelf without replacement, what is the probability he gets two blue books then two purple books \emph{in that order}? \spc{4}
+
+\subquestionwithpoints{4}  If he randomly takes 4 books off the shelf without replacement, what is the probability he gets books of all different colors? \spc{4}
+
+\subquestionwithpoints{4}  If he randomly takes 4 books off the shelf without replacement, what is the probability he gets two books of one color and two books of a different color (e.g. two green books and two purple books)? This problem is hard, save it for last. \spc{4}
+
+\subquestionwithpoints{3} He assigns each specific book to a specific student in his class to read. If he hands them out randomly, what is the probability at least one student will get their assigned book?\spc{1}
+
+\eenum
+
+\problem This problem is about the philosophical theory of probability.
+
+\benum
+
+\subquestionwithpoints{3} Experts at a think tank estimate war with North Korea at 50-50. What definition of probability was employed here? \spc{2}
+
+\subquestionwithpoints{3} Pictured below is the \qu{bean machine}. A marble gets dropped in from the top and it makes its way down to a bin on the bottom. 
+
+\begin{figure}[htp]
+\centering
+\includegraphics[width=3in]{bean.png}
+\end{figure}
+
+Only 0.8\% of the marbles wind up in the leftmost bin. What definition of probability was most likely employed to arrive at this number? \spc{2}
+
+\subquestionwithpoints{3} If a marble was dropped down, would Laplace believe its final destination bin to be truly deterministic? Yes/no. \spc{2}
+
+
+\eenum
+
+\problem The incidence of cirrhosis in America is approximately 0.57\% but among alcoholics, it's 15\%. There are about 8 million alcoholics in America, a country with a total population of 323 million. Let the event $C$ denote cirrhosis and the event $A$ denote alcoholism.
+
+\benum
+\subquestionwithpoints{5} In a random sample of 12 Americans, what is the probability at least one of them is alcoholic? Compute and round to 3 significant digits. \spc{2}
+
+\subquestionwithpoints{3} [Extra Credit] In a random sample of 86 Americans, what is the probability 59 of them are alcoholic? Compute and round to 3 significant digits. \spc{3}
+
+\subquestionwithpoints{4} Find $\prob{AC}$. Compute and round to 3 significant digits. \spc{3}
+
+\subquestionwithpoints{4} We do not know if Joe is an alcoholic or not. What is the best guess of the probability he develops cirrhosis? \spc{2}
+
+\subquestionwithpoints{4} Prove or disprove: $A, C$ are independent events. \spc{4}
+
+\subquestionwithpoints{4} Find the probability of not having cirrhosis and not being an alcoholic. Compute and round to 3 significant digits. \spc{4}
+
+\subquestionwithpoints{8} Find the risk ratio of alcoholism in cirrhosis. Compute and round to 3 significant digits. Provide a one-sentence interpretation in English. \spc{2}
+
+
+\eenum
+
+\end{document}
+%%%%%%%%%%%%%%%%%%%
+
+
+
+\problem This problem is about the philsophical theory of probability.
+
+\benum
+\subquestionwithpoints{2} Let $p := \prob{\text{Trump wins the election in November}}$. Posit a \textit{numeric answer} for $p$. \spc{2}
+
+\subquestionwithpoints{5} Explain why there is no \qu{correct} answer to (a). Make sure to mention in your answer which definition of probability you are invoking. \spc{2}
+
+\subquestionwithpoints{2} Would Laplace believe that the event \qu{Trump wins the election in November} to be \emph{truly} random? Yes/no only. \spc{2}
+\eenum
+
+
+\problem This problem is about sets and the mathematical theory of probability.
+
+\benum
+
+\subquestionwithpoints{3}Simplify $\braces{\varnothing} \cap \braces{\braces{\varnothing}}$. \spc{0.5}
+
+\subquestionwithpoints{3} Let $A = \braces{1,2,3}$ and $B = \braces{1,2,3,4}$. Simplify $2^A \cap 2^B$. \spc{0.5}
+
+\subquestionwithpoints{3} Compute $\cprob{A}{A^C}$. \spc{0.5}
+
+\subquestionwithpoints{6} Consider events $A$ and $B$. Prove that $\prob{A \cup B} \leq \prob{A} + \prob{B}$. Use the \qu{axioms} of the probability set function and your knowledge of set theory and \textit{any} theorems from class that may be useful. \spc{12}
+
+
+
+\eenum
+
+\problem For the most part, motor vehicles are produced with one of two types of transmissions: manual and automatic. Manual is less common in cities because it's considered more burdensome for drivers, especially in traffic.
+
+\begin{figure}[htp]
+\centering
+\includegraphics[width=3in]{manualvsautomatic.jpg}
+\end{figure}
+
+The percentage of new manual vehicles produced for 2017 is 46.2\%. Americans consume 21.1\% of worldwide vehicles. And 6.5\% of new vehicles in American are estimated to be manual.
+
+\benum
+\subquestionwithpoints{2} Let $A$ denote the event that a new car is in America and $M$ denote the event that a new car has a manual transmission. What is $\prob{A}$? Compute explicitly. \spc{1}
+
+\subquestionwithpoints{2} Let $A$ denote the event that a new car is in America and $M$ denote the event that a new car has a manual transmission. What is $\prob{M}$? Compute explicitly. \spc{1}
+
+
+\subquestionwithpoints{2} Let $A$ denote the event that a new car is in America and $M$ denote the event that a new car has a manual transmission. What is $\cprob{M}{A}$? Compute explicitly. \spc{1}
+
+\subquestionwithpoints{4} What is the probability that the car is in America given that it is a manual transmission? Compute explicitly. \spc{5}
+
+\subquestionwithpoints{7} How much more likely is a car to be manual outside of America than within America? Compute explicitly. \spc{9}
+
+
+\subquestionwithpoints{3} [Extra Credit] Odds Against an event $A$ is defined as $\prob{A^C} / \prob{A}$. What are the odds against a car being American given that its automatic? Compute explicitly. \spc{6}
+
+\subquestionwithpoints{4} You see seven new cars go by in New York. What is the probability all of them were manual? Compute explicitly. \spc{4}
+
+\subquestionwithpoints{6} You see seven new cars go by in New York. What is the probability at least one of them was manual? Compute explicitly. \spc{6}
+
+\subquestionwithpoints{3} You see seven new \textit{manual} cars go by in New York. What is the probability the next one (the eigth car) is automatic? Compute explicitly. \spc{1}
+
+\subquestionwithpoints{6} List all assumption(s) you use to answer (g), (h) and (i). There should be at least two. State if each assumptions is reasonable \textit{and why}.\spc{7}
+
+\subquestionwithpoints{3} You go to a party with 20 cars and everyone puts their keys in a bag and the keys are distributed out randomly. What is the approximate probability at least one person gets the keys to their car? Compute approximately. \spc{2}
+
+
+\eenum
+
+
+\end{document}
+
+
+
+\problem This question is about \qu{combination locks.} The particular model pictured below is called a MasterLock.
+
+\begin{figure}[htp]
+\centering
+\includegraphics[width=3in]{masterlock.jpg}
+\end{figure}
+
+\noindent It has 40 notches labeled $\braces{0, 1, \ldots, 39}$. The lock is opened by entering the \qu{code} which consists of turning the lock to the right to the first number in the code, then turning one full rotation to the left and then to the second number in the code and finally turning right to the third number in the code. There are no restrictions on these three code numbers. Locks are identified by these three numbers and assume the locks are identical in every other way.
+
+\benum
+\subquestionwithpoints{3} Express $\Omega$, the universe of all possible lock combinations using set notation.\spc{2}
+
+\subquestionwithpoints{3} How many unique locks can be produced? That is to say, how many codes are there? This is also $|\Omega|$.\spc{2}
+
+\subquestionwithpoints{3} The locks are manufactured with the codes being equally likely. You go to the store and purchase one MasterLock. What is the probability the code is 21-10-32? No need to compute. \spc{2}
+
+\subquestionwithpoints{3} The locks are manufactured with the codes being equally likely. Your friend goes to the store and purchases one MasterLock with the code 21-10-32. You also purchase a lock. What is the probability you get the same code? \spc{2}
+
+
+\subquestionwithpoints{3} In one sentence, explain why the lock should not be called a \qu{combination lock} and instead be called a \qu{permutation lock.}\spc{2}
+
+\subquestionwithpoints{3} In one sentence, explain why the lock should not be called a \qu{permutation lock} either.\spc{2}
+
+\subquestionwithpoints{4} Assume that no numbers in the code are duplicated (each code number is unique and cannot be repeated). What is the probability of getting a lock where each number is less than 10 (that is 0, 1, \ldots, 9)? No need to compute explicitly.\spc{3}
+
+
+\subquestionwithpoints{5} Assume that no numbers in the code are duplicated (each code number is unique and cannot be repeated). What is the probability of getting two even numbers and one odd number in the code (not necessarily in that order)? Note: zero is an even number; thus, there are twenty even numbers and twenty odd numbers in a MasterLock code number. \spc{3}
+
+
+\subquestionwithpoints{4} What is the probability of getting a lock whose code consists of one odd number and two non-trivial powers of two i.e. from the set $\braces{2, 4, 8, 16, 32}$? \spc{2}
+
+
+\eenum
+
+\problem Imagine you are a contestant on the Monte Hall game. 
+
+\begin{figure}[htp]
+\centering
+\includegraphics[width=2.3in]{montehall.jpg}
+\end{figure}
+
+Assume the same rules as we dicussed in class and that was on the homework. There are three doors with a hidden car in one and two smelly goats in the others. The location of the car is known by the gameshow host. You pick a door and the gameshow host opens a different door revealing one of the two goats. You now have the option to switch.
+
+In this problem a similar situation as we talked about in class: assume the car is in door 2 but the contestant does not know thats.
+
+\benum
+\subquestionwithpoints{6} Draw the tree for this game with the following events: contestant first door pick (with states DP1, DP2, DP3), gameshow host door open (with states DO1, DO2, DO3), contestant win assuming contestant switches doors (with states W and L). Assume the car is in door 2. When drawing the tree, include all conditional probabilities and joint probabilities.\spc{10}
+
+\subquestionwithpoints{5} Assuming the contestant has won, what is the probability the contestant chose door 1 as their first door pick?\spc{3}
+
+\subquestionwithpoints{6} Assuming the host chose door 3 to open up, what is the probability the contestant won?\spc{3}
+
+
+\subquestionwithpoints{5} Assume that if the contestant chose door 2 on the first pick, the game is repeated with 60\% probability but otherwise the normal rules of the game are in effect. What is the probability the contestant wins now?\spc{6}
+
+
+\eenum
+
+\problem This problem has theoretical questions that are not related to one another.
+
+\benum
+
+\subquestionwithpoints{3} What is the set of $\integers \backslash \rationals$?\spc{2}
+
+
+\subquestionwithpoints{3} What is $\bigcup_{i=1}^{10} (-i,~i)$?\spc{1}
+
+\subquestionwithpoints{4} Assume $\Omega = \braces{\omega_1, \omega_2, \omega_3}$ where each outcome is equally likely. Compute:
+
+\beqn
+\sum_{A \in 2^\Omega} \prob{A} = \hspace{400px}
+\eeqn\spc{0.5}
+
+
+\subquestionwithpoints{4} [Extra Credit] Repeat the calculation in the previous question except with $\Omega$ now having an arbitrary number of outcomes, $n$. Answer as succinctly as possible (use the most compact notation). \spc{4}
+
+
+\subquestionwithpoints{5} Assume that $\prob{A} > 0$ if $A$ is non-empty. If $A \subset D$, prove that $\prob{A} < \prob{D}$. Prove it from the definition of probability as well as what you know from set theory.\spc{9}
+
+
+\subquestionwithpoints{4} Using all theorems and facts from class, prove that:
+
+\beqn
+\prob{A^C \cap B^C} = 1 - \prob{A} - \prob{B} + \prob{A \cap B}
+\eeqn\spc{4}
+
+
+\subquestionwithpoints{3} In the multinomial expansion of $(a+b+c+d+e+f)^{600}$, how many terms are $a^{100} b^{100} c^{100} d^{100}e^{100}f^{100}$? No need to compute explicitly.\spc{2}
+
+
+\subquestionwithpoints{4}  Approximate 1000! as 10 to the power of some number. Compute that number to one decimal place.\spc{3}
+
+\subquestionwithpoints{3}  If $a = \binom{999}{500}$ and $b = \binom{999}{499}$, express $\binom{1000}{500}$ as a function of $a$ and $b$.\spc{2}
+
+
+\subquestionwithpoints{3} What is the probability that OJ Simpson was guilty of the homicides he was accused of?\spc{2}
+
+
+\subquestionwithpoints{4} Why is the long run frequency definition of probability not adequate to define the probability you came up with in the previous question? \spc{3}
+
+\subquestionwithpoints{3} Laplace believed in universal determinism. If he thought everything was predetermined, how would he explain how a coin flips randomly to heads or tails? \spc{5}
+
+%\subquestionwithpoints{3} Explain using estimates of conditional and unconditional probabilities why the events \qu{having lung cancer} (denoted by B) and \qu{being a smoker} (denoted by A) are independent or dependent. Use the same reasoning we used in class. \spc{3}
+
+\subquestionwithpoints{4} A company has 20 trucks and 10 grocery stores. If each truck carries the same load (i.e. they can be considered indistinct) but each grocery store is different, how many ways is there to send the 20 trucks to the 10 grocery stores such that each store gets at least one shipment? No need to compute explicitly. \spc{3}
+
+\subquestionwithpoints{4} 20 couples enter a ballroom. Each man chooses a random girl to dance with. What is the approximate probability no man dances with his girlfriend?
+\eenum
+
+
+
+
+\end{document}
