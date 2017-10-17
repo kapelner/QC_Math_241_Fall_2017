@@ -41,10 +41,11 @@ My lectures can be listened to as youtube tracks [(all lectures)](https://www.yo
 * Lecture 1 [(audio)](https://youtu.be/qadgUoHEO14) [(Ravneet Kaur)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/lectures/lec01kaur.pdf) [(Fang Xiaochuan)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/lectures/lec01fang.pdf) [(Mike Morcerf)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/lectures/lec01morcerf.pdf) [(Dolibeth Estevez)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/lectures/lec01estevez.pdf) [(Michelle Sawh)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/lectures/lec01sawh.pdf) [(Maysun Jamil)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/lectures/lec01jamil.pdf) [(anonymous)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/lectures/lec01anon.pdf) [(Prof)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/lectures/lec01kap.pdf)
 
 
-## Martin Sendrowicz's Notes
+## Martin Sendrowicz's Notes - THE VERY NICEST EVER
 
 Midterm 1 [(A)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/marcin/1a.pdf) [(B)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/marcin/1b.pdf) [(C)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/marcin/1c.pdf)
 
+Midterm 2 [(A)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/marcin/2a.pdf)
 
 ## Homeworks
 
