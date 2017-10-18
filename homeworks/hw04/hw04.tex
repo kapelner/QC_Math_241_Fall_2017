@@ -1,0 +1,290 @@
+\documentclass[12pt]{article}
+
+\include{preamble}
+
+\newtoggle{professormode}
+\toggletrue{professormode} %STUDENTS: DELETE or COMMENT this line
+
+
+
+\title{MATH 241 Fall 2017 Homework \#4}
+
+\author{Professor Adam Kapelner} %STUDENTS: write your name here
+
+\iftoggle{professormode}{
+\date{Due 6:30PM KY604 or KY258, Thursday, October 26, 2017 \\ \vspace{0.5cm} \small (this document last updated \today ~at \currenttime)}
+}
+
+\renewcommand{\abstractname}{Instructions and Philosophy}
+
+
+
+
+\begin{document}
+\maketitle
+
+\iftoggle{professormode}{
+\begin{abstract}
+The path to success in this class is to do many problems. Unlike other courses, exclusively doing reading(s) will not help. Coming to lecture is akin to watching workout videos; thinking about and solving problems on your own is the actual ``working out''.  Feel free to \qu{work out} with others; \textbf{I want you to work on this in groups.}
+
+Reading is still \textit{required}. For this homework set, read the section about foundations of probability in Chapter 2 and the section about conditional probability and in/dependence in Chapter 3 in Ross. Chapter references are from the 7th edition.
+
+The problems below are color coded: \ingreen{green} problems are considered \textit{easy} and marked \qu{[easy]}; \inorange{yellow} problems are considered \textit{intermediate} and marked \qu{[harder]}, \inred{red} problems are considered \textit{difficult} and marked \qu{[difficult]} and \inpurple{purple} problems are extra credit. The \textit{easy} problems are intended to be ``giveaways'' if you went to class. Do as much as you can of the others; I expect you to at least attempt the \textit{difficult} problems.
+
+This homework is worth 100 points but the point distribution will not be determined until after the due date. See syllabus for the policy on late homework.
+
+Up to 15 points are given as a bonus if the homework is typed using \LaTeX. Links to instaling \LaTeX~and program for compiling \LaTeX~is found on the syllabus. You are encouraged to use \url{overleaf.com}. If you are handing in homework this way, upload \texttt{hwxx.tex} and \texttt{preamble.tex}, read the comments in the code; there are two lines to comment out and you should replace my name with yours and write your section. If you are asked to make drawings, you can take a picture of your handwritten drawing and insert them as figures or leave space using the \qu{$\backslash$vspace} command and draw them in after printing or attach them stapled.
+
+The document is available with spaces for you to write your answers. If not using \LaTeX, print this document and write in your answers. I do not accept homeworks not on this printout. Keep this first page printed for your records. Write your name and section below (A, B or C).
+
+\end{abstract}
+
+\thispagestyle{empty}
+\vspace{1cm}
+NAME: \line(1,0){220} ~~SECTION (A, B or C): \line(1,0){35}
+
+}
+
+\iftoggle{professormode}{
+\paragraph{Random Variables} We now begin question about the second unit of this class: r.v.'s. Anything past this point is NOT covered on Midterm 1. \\ \\
+}
+
+
+\problem{In class we spoke about how random variables map outcomes from the sample space to a number \ie $X: \Omega \rightarrow \reals$. That is they are set functions, just like the probability function which is $\mathbb{P}: 2^\Omega \rightarrow \zeroonecl$. We will be investigating this concept here.
+
+\iftoggle{professormode}{
+\begin{figure}[htp]
+\centering
+\includegraphics[width=2.5in]{rv.jpg}
+\end{figure}
+\FloatBarrier
+}}
+
+\begin{enumerate}
+\easysubproblem{Here is a way to produce $X \sim \bernoulli{\half}$ using the $\Omega$ from a roll of a die. Map outcomes 1,2,3 to 0 and outcomes 4,5,6 to 1. This works because 
+
+\beqn
+&&\prob{X=0} = \prob{\braces{\omega : X(\omega) = 0}} = \prob{\braces{1, 2, 3}} = 1/2 ~~\text{and} \\ 
+&&\prob{X=1} = \prob{\braces{\omega : X(\omega) = 1}} = \prob{\braces{4, 5, 6}} = 1/2.
+\eeqn
+
+Describe three other scenarios or devices that produce their own $\Omega$'s that also result in $X \sim \bernoulli{\half}.$ Be creative (i.e. not boring).} \spc{5}
+
+\intermediatesubproblem{We talked about in class how the sample space no longer needs to be considered once the random variable is described. Why? Use your answer to (a) to inspire this answer. Write it \textit{in English} below.} \spc{3}
+
+\hardsubproblem{Back to philosophy... Let's say $X$ models the price difference that IBM stock moves in one day of trading. For instance, if the stock closed yesterday at \$56.24 and today it closed at \$57.24, the random variable would be \$1 for today. According to our definition of a random variable, there is a sample space with outcomes being drawn ($\omega \in \Omega$) that is \qu{controlling} the value of $X$. Describe it the best you can \textit{in English}. There are no right or wrong answers here, but your answer must be coherent and demonstrate you understand the question.} \spc{6}
+
+\end{enumerate}
+
+
+\problem{We will now study probability mass functions (PMF's) denoted as $p(x)$ and cumulative distribution functions (CDF's) denoted as $F(X)$ and review the r.v.'s we did in class.}
+
+\begin{enumerate}
+
+\easysubproblem{Draw the PMF for $X \sim \bernoulli{p}$.}  \spc{3}
+
+\easysubproblem{Draw the CDF for $X \sim \uniformdiscrete{1,3,4,9}$.}  \spc{3}
+
+\intermediatesubproblem{Using the r.v. from the previous question, what is $\prob{X \in (3,9)}$? I am trying to trick you here.} \spc{3}
+
+\hardsubproblem{In class we defined the Bernoulli r.v. as:
+
+\beqn
+X \sim \begin{cases}
+1 \withprob p \\
+0 \withprob 1-p
+\end{cases}
+\eeqn
+
+and put its PMF on the board. Write $p(x)$ for $X \sim \bernoulli{p}$ that is only valid for not only all values in the $\support{X}$ but all values in $\reals$. Hint: use the indicator function.} \spc{1}
+
+\easysubproblem{What is the parameter space of $X$ where $X \sim \bernoulli{p}$ and why?}  \spc{1.5}
+
+
+%\hardsubproblem{Sometimes knowing the $\Omega$ matters a little bit. Let's say $X_1 \sim \bernoulli{\half}$ is generated from one coin and $X_2 \sim \bernoulli{\half}$ is generated from another coin independently tossed. Create a new r.v. $T = X_1 + X_2$. Describe its PMF using the $\sim$ notation like in the previous problem. Thus write \qu{$T \sim$} something.} \spc{13}
+
+\hardsubproblem{Consider the PMF we discussed for $X \sim \bernoulli{\half}$. Does $\myint{x}{}{}{p(x)} = F(x) + C$ where the constant $C \in \reals$? Explain. Think carefully about what integration really means.} \spc{5}
+
+\hardsubproblem{How about the opposite? Consider the CDF we discussed for $X \sim \bernoulli{\half}$. Does $\text{d} / \text{d}x[F(x)] = p(x)$? Explain. Think carefully about what differentiation really means.} \spc{3}
+
+
+\end{enumerate}
+
+\iftoggle{professormode}{
+\paragraph{Hypergeometric Distribution} This is a very interesting random variable and we will cover it thoroughly between this homework and the next one.\\ \\
+} 
+
+\problem{The hypergeometric is sampling \qu{without replacement.} Imagine you have this bag of marbles with 37 marbles and 17 of them are black. We will define a \qu{success} as drawing a black marble.
+
+\iftoggle{professormode}{
+\begin{figure}[htp]
+\centering
+\includegraphics[width=2in]{marble.jpg}
+\end{figure}
+\FloatBarrier
+}}
+
+\begin{enumerate}
+
+\easysubproblem{Let's say you draw one marble. Call this r.v. $X$. Is it hypergeometric?} \spc{0.2}
+
+\easysubproblem{The hypergeometric distribution has three parameters. What are the parameters for $X$?} \spc{2}
+
+\easysubproblem{Write, but do not draw, the PDF, $p(x)$ for the r.v. $X$ where $x$ is the number of successes.} \spc{2}
+
+\easysubproblem{What is the support of this r.v.?} \spc{2}
+
+\intermediatesubproblem{There is another variable we learned about in class with this same support. Show that $X$ is distributed as this type of r.v. and find its parameter(s).} \spc{2}
+
+\easysubproblem{Now imagine you draw 4 marbles without replacement. Call this r.v. $X$ (and forget about the previous r.v. $X$ from this question, parts a-e). How is $X$ distributed? Use the notation in class and find its parameters.} \spc{2}
+
+\easysubproblem{What is the support of $X$?} \spc{2}
+
+\easysubproblem{Write, but do not draw, the PMF of $X$.} \spc{3}
+
+\easysubproblem{Draw the PMF of $X$.} \spc{6}
+
+\easysubproblem{Draw the CDF of $X$.} \spc{6}
+
+\easysubproblem{What is the probability of getting 4 successes in a row? Use the PMF.} \spc{3}
+
+%\easysubproblem{What is the probability of getting 4 successes in a row? Use conditional probability. This should yield the same answer.} \spc{3}
+
+\easysubproblem{Now imagine you draw 27 marbles without replacement. Call this r.v. $X$ (and forget about the previous r.v. $X$). How is $X$ distributed? Use the notation in class and find its parameters.} \spc{2}
+
+\easysubproblem{What is the support of $X$?} \spc{1}
+
+\easysubproblem{Why is $0 \notin \support{X}$?} \spc{1}
+
+\easysubproblem{Write, but do not draw, the PMF of $X$.} \spc{1}
+
+\hardsubproblem{Find the mode of this distribution. \qu{Mode} is defined as the most likely outcome result.} \spc{6}
+
+\end{enumerate}
+
+\problem{Generally, the hypergeometric has three parameters. We will solve for its support here under several disjoint conditions and then in class we will generalize it. Call $X$ a hypergeometric r.v. with all its parameters free - meaning they can take on any value, so please use the notation $n,~K,~N$ in your answers as we did in class. This problem is just copying from your class notes.}
+
+\begin{enumerate}
+\easysubproblem{Using the usual parameterization of the hypergeometric, describe the parameter space. You need to say what sets each of the parameters \qu{lives} in. }\spc{4}
+
+\easysubproblem{Write, but do not draw, the PMF of $X$. }\spc{3}
+
+%\intermediatesubproblem{ $x$ is the free variable in $p(x)$ which you wrote in (b) and it designates the number of successes. Show that successes and failure are essentiall the same thing by finding $p(n-x)$ and replacing $K$ with $N-K$. What does this teach you? }\spc{2.5}
+
+\easysubproblem{ Let's say $n < K$ and $n < N-K$. What is the support of $X$ in this situation? }\spc{3}
+
+\easysubproblem{ Let's say $n < K$ and $n \geq N-K$. What is the support of $X$ in this situation? }\spc{3}
+
+\easysubproblem{ Let's say $n \geq K$ and $n < N-K$. What is the support of $X$ in this situation? }\spc{3}
+ 
+\easysubproblem{ Let's say $n \geq K$ and $n \geq N-K$. What is the support of $X$ in this situation? }\spc{2.5}
+
+\intermediatesubproblem{Find a formula using a sum for the CDF of the general hypergeometric r.v. }\spc{6}
+
+
+\extracreditsubproblem{Demonstrate that the sum of the PMF over the support is 1 (on a separate piece of paper).}\spc{11}
+
+\end{enumerate}
+
+%
+%\problem{We will look at the general hypergeometric distribution with large $N$.}
+%
+%\begin{enumerate}
+%
+%\easysubproblem{We will now begin deriving the binomial in pieces. Parameterize a hypergeometric by setting $K = pN$. What is the parameter space for $p$? }\spc{2.5}
+%
+%\easysubproblem{Write the PMF $p(x)$ for this r.v. using the $p$ parameterization using $x$ as the free variable. }\spc{2.5}
+%
+%\easysubproblem{What limit do we take and why are we taking this limit? }\spc{2.5}
+%
+%\easysubproblem{Rewrite the PMF without choose notation using only factorials and simplify the fraction by moving the factorial terms from denominator, $\binom{N}{n}$, to the numerator.}
+%
+%\beqn
+%p(x) = \lim_{N \rightarrow \infty} \frac{(pN)!}{\inpurple{x!} (pN - x)!} \frac{((1-p)N)!}{\inpurple{(n-x)!} ((1-p)N - n + x)!} \frac{\inpurple{n!} (N-n)!}{N!} 
+%\eeqn
+%
+%\easysubproblem{Which three terms can you factor out from the limit expression? Show that they are equivalent to $\binom{n}{x}$. }\spc{5}
+%
+%
+%\hardsubproblem{ Within the limit, you now have three ratios. Write these ratios by canceling out the common terms. For instance $10!/6! = 10 \times 9 \times 8 \times 7$ and $6!/10! = 1 / (10 \times 9 \times 8 \times 7)$. You have to get the indexing right.  }\spc{6}
+%
+%\intermediatesubproblem{ How many terms are in the numerator? How many terms are in the denominator.}
+%
+%There are $x$ terms in the first piece of the numerator and $n-x$ terms in the second piece of the denominator for a total of $n$ terms. Then there are $n$ terms in the denominator.
+%
+%\intermediatesubproblem{ Reason in English that the denominator looks like a bunch of $N - c_i$ where the $c_i$'s are all constants which are negligible as $N \rightarrow \infty$. }\spc{3}
+%
+%\intermediatesubproblem{ Reason in English that the numerator looks like a bunch of $Np - c_i$ where the $c_i$'s are all constants which are negligible as $N \rightarrow \infty$ as well as a bunch of $(1-p)N - c_i$ where the $c_i$'s are all constants which are negligible as $N \rightarrow \infty$.  }\spc{5}
+%
+%\intermediatesubproblem{ Match each $Np - c_i$ term in the numerator to one $N - c_i$ term in the denominator and take the limit of each one individually. Show that you wind up with $p \times p \times \ldots$ for a total of $x$ times, i.e. $p^x$. }\spc{4}
+%
+%\intermediatesubproblem{ Match each $(1-p)N - c_i$ term in the numerator to one $N - c_i$ term in the denominator and take the limit of each one individually. Show that you wind up with  $(1-p) \times (1-p) \times \ldots$ for a total of $n-x$ times, i.e. $ \tothepow{1-p}{n-x}$. }\spc{4}
+%
+%\easysubproblem{Using your answers from the previous parts to write the binomial r.v.'s PMF. }\spc{2}
+%
+%\extracreditsubproblem{ Imagine you are drawing $n$ successes with and without replacement. Derive a function of $N$ and $n$ which gives this percentage difference for $N$ and $n$ generally when the number of successes $K = \half N$. }\spc{7}
+%
+%
+%\end{enumerate}
+
+
+\problem{We will now look at the binomial in general.}
+
+\begin{enumerate}
+
+\intermediatesubproblem{ Show using the definition of equals in distribution that $X_1 \equalsindist X_2$ if $X_1 \sim \bernoulli{p}$ and $X_2 \sim \binomial{1}{p}$.  }\spc{3}
+
+\intermediatesubproblem{Imagine an infinite bag where 47\% of the balls are \qu{successes}. If I draw 87 balls, what is the probability I get 29 success balls?}\spc{3}
+
+
+\intermediatesubproblem{Imagine I have a bag with 300 balls where $141$ of the balls are \qu{successes}. If I draw 87 balls \textit{with replacement}, what is the probability I get 29 success balls?}\spc{3}
+
+
+\intermediatesubproblem{Why is your answers to (c) and (d) the same?}\spc{3}
+
+\easysubproblem{Let $\Xoneton \iid \bernoulli{p}$. Give a real-life example of this situation}\spc{4}
+
+\easysubproblem{Let $T_n = X_1 + \ldots + X_n$ where $\Xoneton \iid \bernoulli{p}$. How is $T_n$ distributed? }\spc{1}
+
+\hardsubproblem{Let $X_1, \ldots, X_n \iid \bernoulli{p}$ and $T_n = \sum_{i=1}^n X_i$. Derive the distribution of $T_n$ from first principles just like we did in the notes.}\spc{11}
+
+\end{enumerate}
+
+
+\problem{Imagine two Bernoulli r.v.'s $X_1$ and $X_2$ which model two fair coin flips where Heads is mapped to 1 and tails is mapped to 0. The probability of heads is 1/2.}
+
+\begin{enumerate}
+
+\easysubproblem{Given no other information, explain using the definition of r.v. independence why these two r.v.'s are independent. }\spc{2}
+
+\easysubproblem{Given no other information, explain using the definition of equality in distribution why $X_1 \equalsindist X_2$. }\spc{2}
+
+\easysubproblem{Are $X_1, X_2 \iid \bernoulli{p}$? }\spc{1}
+
+\intermediatesubproblem{ Now imagine these two coins were linked using some sort of sorcery. They are flipped at the same time but are guaranteed to flip the same way. That is, if the first coin goes heads, the second coin must go heads (and if the first coin goes tails, the second coin must go tails).
+
+\iftoggle{professormode}{
+\begin{figure}[htp]
+\centering
+\includegraphics[width=2.8in]{magiccoins.png}
+\end{figure}
+\FloatBarrier
+}
+
+Explain using the definition of r.v. independence why these two r.v.'s are \textit{dependent}.}\spc{4}
+
+
+\hardsubproblem{ Using the same two sorcery-controlled coins, explain using the definition of equality in distribution why or why not $X_1 \equalsindist X_2$. }\spc{3}
+
+
+
+\easysubproblem{Let $T_2 = X_1 + X_2$. Is $T_2 \sim \binomial{2}{\half}$? Why or why not?  }\spc{4}
+
+\end{enumerate}
+
+
+\end{document}
+
+
+
+
