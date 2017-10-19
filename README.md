@@ -45,7 +45,7 @@ My lectures can be listened to as youtube tracks [(all lectures)](https://www.yo
 
 Midterm 1 [(A)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/marcin/1a.pdf) [(B)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/marcin/1b.pdf) [(C)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/marcin/1c.pdf)
 
-Midterm 2 [(A)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/marcin/2a.pdf)
+Midterm 2 [(A)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/marcin/2a.pdf) [(B)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/marcin/2b.pdf)
 
 ## Homeworks
 
