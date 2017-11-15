@@ -71,6 +71,8 @@ Midterm 2 [(A)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/ma
 
 * Midterm II, November 14/15 (in class). 
 
+[(exam)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/exams/midterm2/midterm2.pdf) [(solutions)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/exams/midterm2/midterm2_solutions.pdf)
+
 * Final, December 18/19
 
 ## Practice Exams
