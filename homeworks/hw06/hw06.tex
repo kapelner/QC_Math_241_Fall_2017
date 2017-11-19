@@ -1,0 +1,369 @@
+\documentclass[12pt]{article}
+
+\include{preamble}
+
+\newtoggle{professormode}
+\toggletrue{professormode} %STUDENTS: DELETE or COMMENT this line
+
+
+
+\title{MATH 241 Fall 2017 Homework \#6}
+
+\author{Professor Adam Kapelner} %STUDENTS: write your name here
+
+\iftoggle{professormode}{
+\date{Due 11:59PM KY 604 (under the door), Thursday, Nov 30, 2017 \\ \vspace{0.5cm} \small (this document last updated \today ~at \currenttime)}
+}
+
+\renewcommand{\abstractname}{Instructions and Philosophy}
+
+
+
+
+\begin{document}
+\maketitle
+
+\iftoggle{professormode}{
+\begin{abstract}
+The path to success in this class is to do many problems. Unlike other courses, exclusively doing reading(s) will not help. Coming to lecture is akin to watching workout videos; thinking about and solving problems on your own is the actual ``working out''.  Feel free to \qu{work out} with others; \textbf{I want you to work on this in groups.}
+
+Reading is still \textit{required}. For this homework set, read the section about the continuous r.v.'s --- the exponential, the uniform and the normal / Gaussian in Ross as well as moment generating functions and their basic properties.
+
+The problems below are color coded: \ingreen{green} problems are considered \textit{easy} and marked \qu{[easy]}; \inorange{yellow} problems are considered \textit{intermediate} and marked \qu{[harder]}, \inred{red} problems are considered \textit{difficult} and marked \qu{[difficult]} and \inpurple{purple} problems are extra credit. The \textit{easy} problems are intended to be ``giveaways'' if you went to class. Do as much as you can of the others; I expect you to at least attempt the \textit{difficult} problems.
+
+This homework is worth 100 points but the point distribution will not be determined until after the due date. See syllabus for the policy on late homework.
+
+Up to 15 points are given as a bonus if the homework is typed using \LaTeX. Links to instaling \LaTeX~and program for compiling \LaTeX~is found on the syllabus. You are encouraged to use \url{overleaf.com}. If you are handing in homework this way, upload \texttt{hwxx.tex} and \texttt{preamble.tex}, read the comments in the code; there are two lines to comment out and you should replace my name with yours and write your section. If you are asked to make drawings, you can take a picture of your handwritten drawing and insert them as figures or leave space using the \qu{$\backslash$vspace} command and draw them in after printing or attach them stapled.
+
+The document is available with spaces for you to write your answers. If not using \LaTeX, print this document and write in your answers. I do not accept homeworks not on this printout. Keep this first page printed for your records. Write your name and section below.
+
+\end{abstract}
+
+\thispagestyle{empty}
+\vspace{1cm}
+NAME: \line(1,0){200} ~~SECTION (A, B or C): \line(1,0){35}
+
+}
+
+\iftoggle{professormode}{
+\paragraph{Fundamentals of Continuous r.v.'s} We will learn about this other type of r.v. \\ \\
+} 
+
+\problem{This problem will focus on the continuous exponential r.v.}
+
+\begin{enumerate}
+
+\easysubproblem{Let $X \sim \exponential{\lambda}$ and let $\lambda = 2.92$. What is $\prob{T=2}$? }\spc{1}
+
+\easysubproblem{Let $\lambda = 3.12$. What is $\prob{T \leq 2}$? }\spc{1}
+
+\easysubproblem{Let $\lambda = 4.56$. What is $\prob{T \in \bracks{2, 2.7}}$? }\spc{1}
+
+\easysubproblem{What is $\support{T}$? }\spc{1}
+
+\easysubproblem{What is $\abss{\support{T}}$? That is, what is the size of this set?}\spc{1}
+
+\easysubproblem{What is the parameter space of $T$? }\spc{1}
+
+\easysubproblem{Run the following in \texttt{R}. It will generate 5 realizations from $T_1, \ldots, T_t \iid \exponential{\lambda = 6.56}$: \texttt{rexp(5, 6.56)} and write them below. }\spc{2}
+
+\easysubproblem{Look at the first draw. Is this number really a draw? Or is it rounded? }\spc{1}
+
+\hardsubproblem{Assume it's rounded from the decimal after the last decimal you see. Find the probability the computer spits out that number when realizing the r.v.  }\spc{2}
+
+\easysubproblem{Derive the PDF $f(t)$ from the CDF.  }\spc{3}
+
+\easysubproblem{Let $\lambda = 4.56$. Compute $p(0.1)$ using the PMF and $f(0.1)$ using the PDF.  }\spc{2}
+
+\intermediatesubproblem{Interpret the PDF at 0.1, $f(0.1)$. What does that number mean?  }\spc{3}
+
+\intermediatesubproblem{In the last problem you got an answer greater than 1. Why should it be possible that the PDF can yield numbers greater than 1?  }\spc{3}
+
+
+\easysubproblem{What is $\prob{T=0.1} / \prob{T=0.2}$?  }\spc{3}
+
+
+\easysubproblem{What is $f(0.1) / f(0.2)$?  }\spc{3}
+
+\easysubproblem{Interpret the answer to the last question \textit{in English}. }\spc{3}
+
+\hardsubproblem{Derive the CDF from the PDF. This will involve anti-differentiation. And you have to worry about the constant of integration and solve for it (somehow). Justify how you solve for the constant to arrive at the same CDF we did in class.  }\spc{4}
+
+\easysubproblem{Run the following lines in \texttt{R} \textit{one at a time} which will plot the PDF for $T \sim \exponential{0.1}$, $T \sim \exponential{1}$, $T \sim \exponential{10}$ and $T \sim \exponential{100}$. 
+
+How do you design an exponential r.v. to give large numbers --- should $\lambda$ be big or small? }
+
+\begin{verbatim}
+par(mfrow = c(2, 2))
+ts = seq(0, 4, 0.01)
+plot(ts, dexp(ts, 0.1), type = "l", ylim = c(0, 1))
+plot(ts, dexp(ts, 1), type = "l", ylim = c(0, 1))
+plot(ts, dexp(ts, 10), type = "l", ylim = c(0, 1))
+plot(ts, dexp(ts, 100), type = "l", ylim = c(0, 1))
+#last line placeholder
+\end{verbatim}
+
+
+\easysubproblem{Let $\lambda = 4.56$, compute $\prob{T \in \zeroonecl}$ using integration on the PDF. }\spc{2}
+
+\easysubproblem{Let $\lambda = 4.56$, compute $\prob{T \in \zeroonecl}$ using a difference of CDF values.  }\spc{2}
+
+\easysubproblem{What theorem describes why the last two problems should be equal? Write the statement of this theorem below.  }\spc{1}
+
+\easysubproblem{Let $\lambda = 4.56$, what is $\prob{T = 1}$ using the integral definition of probability?  }\spc{0}
+
+%\hardsubproblem{Let $T \sim \exponential{\lambda}$. Show that $\expe{T} = 1/\lambda$ using the definition of expectation for continuous r.v.'s. }\spc{10}
+
+
+\easysubproblem{Let's say $\lambda = 2$, what is $\expe{T}$? Pretend the unit of time is seconds.  }\spc{0.5}
+
+%\hardsubproblem{Pretend you are approximating the exponential with a geometric r.v.. Let $n = 1000$ and $p = 0.002$ to have $\lambda = 2$. Show that the expectation of that geometric r.v. is the same as $\expe{T}$ in the previous problem.  }\spc{3}
+
+\hardsubproblem{Let $T \sim \exponential{\lambda}$. Show that $\var{T} = 1/\lambda^2$ using the definition of expectation for continuous r.v.'s. Very googlable.  }\spc{10}
+
+\easysubproblem{Let $T \sim \exponential{\lambda}$. Show that $\se{T} = 1/\lambda$ \textit{by assuming the answer of the last question}. I marked it easy for this reason. }\spc{3}
+
+\easysubproblem{Assume $T \sim \exponential{\lambda}$ and $Y = 10sec + 5T$. What is $\expe{Y}$ and $\se{Y}$? }\spc{3}
+
+\hardsubproblem{For a discrete r.v., we defined the mode as:
+
+\beqn
+\mode{X} := \argmax_{x \in \support{X}} \braces{p(x)}
+\eeqn
+
+where $p(x)$ was the PMF. For continuous r.v.'s, keep the definition the same but replace the PMF with the PDF. Using this definition, find the mode of $T \sim \exponential{\lambda}$. Does this make sense and why?  }\spc{4}
+
+\hardsubproblem{ Let $T \sim \exponential{\lambda}$.  Show that the $\median{T} = \natlog{2} / \lambda$. }\spc{5}
+
+%\extracreditsubproblem{Is time really continuous?}
+%\extracreditsubproblem{Is space really continuous?}
+
+\intermediatesubproblem{Prove the memorylessness property of the exponential r.v.}\spc{6.5}
+%
+%\extracreditsubproblem{The convolution of two continuous r.v.'s occurs when you are trying to find the density of $T = X_1 + X_2$. It is denoted by the $*$ symbol and its formula is below:
+%
+%\beqn
+%f_T(x) = f_{X_1}(x) * f_{X_2}(x) := \int_\reals f_{X_1}(s) f_{X_2}(x - s) ds
+%\eeqn
+%
+%For $X_1$ and $X_2$ only supported on $[0,\infty)$ such as the exponential r.v., the formula becomes:
+%
+%\beqn
+%f_T(x) = f_{X_1}(x) * f_{X_2}(x) = \int_0^{x} f_{X_1}(s) f_{X_2}(x - s) ds
+%\eeqn
+%
+%Prove that the sum of $\iid$ $\exponential{\lambda}$ r.v.'s are distributed as an $\text{Erlang}(r, \lambda)$ which is the continuous analogue of the discrete negative binomial distribution. 
+%
+%That is, prove the convolution of $r$ $\iid$ $\exponential{\lambda}$ has the Erlang \qu{footprint,} defined by its density:
+%
+%\beqn
+%f_T(x) = \frac{\lambda^r x^{r-1} e^{-\lambda x}}{(r - 1)!}
+%\eeqn
+%
+%You should use induction. Do this on a separate piece of paper.}\spc{3}
+
+\end{enumerate}
+
+\problem{We will now get our feet wet with the Uniform r.v.}
+
+\begin{enumerate}
+\easysubproblem{Let $X \sim U(0,1)$, the standard uniform r.v. What is the support of $X$? }\spc{1}
+
+\easysubproblem{Let $X \sim U(0,1)$. What is the PDF of $X$? }\spc{4}
+
+\intermediatesubproblem{Let $X \sim U(0,1)$. Draw the CDF of $X$. }\spc{5}
+
+\easysubproblem{Let $X \sim U(a,b)$, the general uniform r.v. What is the PDF of $X$? }\spc{4}
+
+\intermediatesubproblem{Let $X \sim U(a,b)$. Solve for the CDF of $X$ by finding the correct antiderivative of $f(x)$, the PDF from the last problem (see notes). }\spc{5}
+
+\easysubproblem{Let $X \sim U(a,b)$. Find the $\median{X}$ using the CDF from the previous problem. }\spc{4}
+
+\hardsubproblem{ Let $X \sim U(a,b)$. Find the arbitrary $\text{Quantile}[X, p]$ where $p \in \zeroonecl$. }\spc{5}
+
+\extracreditsubproblem{Let $X \sim U(a,b)$. Compute the arbitrary $n$th moment, $\expe{X^n}$. Do this on a separate piece of paper.}
+
+
+\end{enumerate}
+
+\problem{This is an introduction to the normal r.v. We will do more with it for next homework assignment.}
+
+\begin{enumerate}
+\easysubproblem{Let $Z \sim \stdnormnot$. Write the density $f_Z(x)$ and verify that its value is positive for all real numbers. }\spc{2}
+
+\easysubproblem{What is the $\support{Z}$? }\spc{1}
+
+\easysubproblem{Write $F_Z(1.2345)$ using an integral ($F_Z$ is the CDF of the standard normal). }\spc{1}
+
+\easysubproblem{What is $\prob{Z \in \bracks{-1, 1}}$? }\spc{1}
+
+\easysubproblem{What is $\prob{Z \in \bracks{-2, 2}}$? }\spc{1}
+
+\easysubproblem{What is $\prob{Z \in \bracks{-3, 3}}$? }\spc{4}
+
+
+\intermediatesubproblem{Draw the density $f_Z(x)$ and be careful to denote the x-axis like we did in class. Then illustrate the empirical rule just like we did in class. I want to see the 68, 95, 99.7\%'s denoted as areas. }\spc{5}
+
+\intermediatesubproblem{Draw $\Phi(x) := F_Z(x)$, i.e. the CDF of the standard normal r.v. Use the same scale as your drawing of the PDF of $Z$. }\spc{5}
+
+\easysubproblem{What is $\prob{Z \notin \bracks{-1, 1}}$? }\spc{1}
+
+\easysubproblem{What is $\prob{Z \notin \bracks{-2, 2}}$? }\spc{1}
+
+\easysubproblem{What is $\prob{Z \notin \bracks{-3, 3}}$? }\spc{1}
+
+\easysubproblem{What is $\prob{Z > 1}$? }\spc{1}
+
+\easysubproblem{What is $\prob{Z > -1}$? }\spc{1}
+
+\easysubproblem{What is $\prob{Z < -1}$? }\spc{1}
+
+\easysubproblem{What is $\prob{Z < -2}$? }\spc{1}
+
+\easysubproblem{What is $\prob{Z > 3}$? }\spc{1}
+
+\intermediatesubproblem{What is $\prob{Z \in \parens{-3, 1}}$? }\spc{1}
+
+\intermediatesubproblem{What is $\prob{Z \in \parens{-3, 2}}$? }\spc{1}
+
+\hardsubproblem{Using an online calculator, find the approximate value of the 30\%ile of $Z$. }\spc{1}
+
+\hardsubproblem{Show that $\var{Z} = 1$. }\spc{10}
+
+
+
+
+\intermediatesubproblem{Let $X \sim \normnot{\mu}{\sigsq}$. What is $\prob{Z \in \bracks{\mu - 2\sigma , \mu}}$? }\spc{2}
+
+
+%\extracreditsubproblem{In class we proved that $\int f(x) dx = 1$ for the standard normal. Go through the proof line by line and explain why each line is correct and follows from the previous line in English.}
+
+\extracreditsubproblem{Prove that 
+
+\beqn
+\int_{-\infty}^{\infty}  e^{-a(x+b)^2}\,dx= \sqrt{\frac{\pi}{a}}.
+\eeqn}
+
+%\extracreditsubproblem{Prove that 
+%
+%\beqn
+%\int_0^\infty e^{-ax^b} dx = \frac{\Gamma\left(\frac{1}{b}\right)}{ba^{\frac{1}{b}}}.
+%\eeqn}
+
+
+\extracreditsubproblem{Explain why $F_Z$ is not available in closed form by using the Risch algorithm.}
+
+\end{enumerate}
+
+
+\iftoggle{professormode}{
+\paragraph{Moment Generating Functions} There are a few facts to know for the exam. This is what you are responsible for.\\ \\
+} 
+
+\problem{In this problem you will be introduced to mgf's and learn the three facts about them that we will make use of (1) that mgf's can give you moments easily and (2) it is easy to obtain the mgf of convolutions of r.v.'s. (3) r.v.'s with equivalent mgf's have equivalent CDF's, making them identically distributed.}
+
+\begin{enumerate}
+
+\easysubproblem{What is a moment generating function (mgf)? Read about it in the book and answer a few sentences \textit{in English}. }\spc{2}
+
+\easysubproblem{Using the definition of expectation, write out what $\expe{g(X)}$ is for a discrete r.v. $X$. This can be found in the notes from previous lectures. }\spc{2}
+
+\easysubproblem{Using the definition of expectation, write out what $\expe{g(X)}$ is for a continuous r.v. $X$. This can be found in the notes from previous lectures. }\spc{2}
+
+\easysubproblem{For the mgf, what is the $g(X)$ transformation we are interested in finding the expectation of? Write $g(X) = $ something below. }\spc{2}
+
+\easysubproblem{If $X$ is a discrete r.v., write the definition of the mgf, $M_X(t)$. If you use the notation $f(x)$ make sure you indicate what you are referring to. If you use the notation $\expe{\cdot}$, make sure you indicate the mathematical definition of the expectation. }\spc{2}
+
+\easysubproblem{If $X$ is a continuous r.v., write the definition of the mgf, $M_X(t)$. If you use the notation $f(x)$ make sure you indicate what you are referring to. If you use the notation $\expe{\cdot}$, make sure you indicate the mathematical definition of the expectation.  }\spc{2}
+
+\easysubproblem{Find $M'_X(t)$, the derivative of the mgf with respect to $t$, the dummy variable in the $t$ domain. Assume changing the order of differentiation with integration / summation is allowed.}\spc{1.5}
+
+\easysubproblem{Find $M'_X(0)$, \ie the derivative of the mgf evaluated at $t=0$.}\spc{1}
+
+\easysubproblem{Find $M''_X(t)$, the second derivative of the mgf with respect to $t$.}\spc{1}
+
+\easysubproblem{Find $M''_X(0)$, \ie the second derivative of the mgf evaluated at $t=0$.}\spc{1}
+
+\easysubproblem{Synthesize your answers to the last 4 parts and explain why the mgf is called the \qu{moment generating} function \textit{in English}.  }\spc{2}
+
+\easysubproblem{Let $X_1$ and $X_2$ be two independent r.v's (not necessarily identically distributed). Show that $M_{X_1+X_2}(t) = M_{X_1}(t)M_{X_2}(t)$.  }\spc{2}
+
+\intermediatesubproblem{Generalize this reasoning and show that for $X_1, X_2, \ldots, X_n$, a series of independent r.v.'s discrete or continuous and $T_n = \sum_{i=1}^n X_i$ that the following is true:
+
+\beqn
+M_{T_n}(t) = \prod_{i=1}^n M_{X_i}(t)
+\eeqn  }\spc{3}
+
+\hardsubproblem{In the previous two problems, why do we need independence to prove these facts? Write a couple sentences \textit{in English} referencing the lecture where we went over this.  }\spc{3}
+
+\intermediatesubproblem{Let $Y = aX + c$ where $X$ is a r.v. either discrete or continuous and both $a$ and $c \in \reals$ are constants. Let $M_X(t)$ denote the mgf for the r.v. $X$. Find $M_Y(t)$, the mgf for the shifted r.v. $Y$ as a function of $M_X(t)$.  }\spc{5}
+
+\end{enumerate}
+
+\problem{Here, we will be deriving mgf's of some of our brand name r.v.'s and using them to prove cool things about distribution theory.}
+
+
+\begin{enumerate}
+%\easysubproblem{Let $X \sim \bernoulli{p}$. Show that $\expe{X^{37}} = p$ using the definition of expectation. I will begin the problem below for you: 
+%
+%\beqn
+%\expe{X^{37}} &=& \sum_{x \in \support{X}} x^{37} f(x) = \sum_{x=0}^1 x^{37} p^x (1-p)^{1-x} \\
+%&=&
+%\eeqn
+%}\spc{4}
+
+\intermediatesubproblem{Using the definition of the mgf, find $M_X(t)$, the mgf for a Bernoulli r.v.}\spc{2}
+
+
+\hardsubproblem{Show that $\expe{X^{37}} = p$ using the mgf and the fact you proved in question 1(o). You may have to use English to explain what you're doing. I do not expect you to take 37 derivatives, but you should take at least two and see the pattern.}\spc{5}
+
+
+\hardsubproblem{Let $T \sim \binomial{n}{p}$. Find the mgf of $X$ using the definition of the mgf. You will need to invoke the binomial theorem here (see class notes). }\spc{4}
+
+
+\intermediatesubproblem{Using the fact you proved in 1(r), use mgf's to show that $T = X_1 + \ldots + X_n$ where $T$ is the binomial r.v. from the previous problem and $X_1, \ldots, X_n \iid \bernoulli{p}$. }\spc{4}
+
+
+
+
+\hardsubproblem{Show that the sum of two independent r.v.'s $T_1 \sim \binomial{n_1}{p}$ and $T_2 \sim \binomial{n_2}{p}$ is a new r.v. which itself is a binomial and find its parameters. Does this make sense given what you proved in (e)? }\spc{8}
+
+
+\hardsubproblem{Let $X \sim \poisson{\lambda}$ with mgf:
+
+\beqn
+M_X(t) = e^{\lambda (e^t - 1)}
+\eeqn
+
+Show that the sum of two independent r.v.'s $X_1 \sim \poisson{\lambda_1}$ and $X_2 \sim \poisson{\lambda_2}$ is itself a Poisson r.v. and find its parameter. You don't even need to know what the Poisson is for this question.}\spc{4}
+
+%\hardsubproblem{You have shown previously that the mgf for the r.v. $X \sim \binomial{n}{p}$ was $M_X(t) = \tothepow{1-p+pe^t}{n}$. In the previous problem you were given the mgf for the r.v. $X \sim \poisson{\lambda}$ was $M_X(t) = e^{\lambda (e^t - 1)}$. Although we didn't cover it in class, the Poisson distribution is the limit of the Binomial distribution with $n \rightarrow \infty$ and the rate parameter pinned $\lambda = np$. Prove that the Poisson's mgf is this limit of the Binomial's mgf. Really not hard: just some algebraic manipulations. Let $p = \lambda / n$.}\spc{4}
+
+\intermediatesubproblem{We proved in class that if $Z \sim \stdnormnot$ then $M_Z(t) = e^{t^2/2}$. We also showed that if $X = \sigma Z + \mu$, then $X \sim \normnot{\mu}{\sigsq}$. Show that the mgf of $X$ is $M_X(t) = e^{\mu t + \sigsq t^2 /2}$ using what you learned in 4(o) and the class notes.  }\spc{4}
+
+\hardsubproblem{Let $X_1, X_2, \ldots, X_n$ be a sequence of independent normal random variables where $X_1$ has mean $\mu_1$ and variance $\sigsq_1$ and $X_2$ has mean $\mu_2$ and variance $\sigsq_2$, etc. Show that $X_1 + X_2 + \ldots + X_n$ is normally distributed and find its parameters.  }\spc{6}
+
+\extracreditsubproblem{Let $X \sim \exponential{\lambda}$ with mgf:
+
+\beqn
+M_X(t) = \frac{\lambda}{\lambda - t}
+\eeqn
+
+Demonstrate that the sum of $X_1, \ldots, X_n \iid \exponential{\lambda}$ is an Erlang r.v. with parameters $n$ and $\lambda$, the continuous analogue of the Negative Binomial r.v.  (You will need to look up the mgf of the Erlang distribution). Do on a separate piece of paper.}
+
+\extracreditsubproblem{The standard Cauchy distribution has center 0 and scale parameter 1 and its PDF is:
+
+\beqn
+f(x) = \oneover{\pi(1+x^2)}
+\eeqn
+
+The Cauchy distribution is a classic example of a pathological r.v. You'll see why. The standard Cauchy r.v. is actually the ratio of two independent standard normal r.v.'s: if $X \sim \stdnormnot$ and $Y \sim \stdnormnot$ then $X/Y$ has the PDF above.
+
+Prove that the mgf for a standard Cauchy r.v. does not exist. This is really not hard but it looks menacing. Do on a separate piece of paper. }
+
+\extracreditsubproblem{Prove $\Xbar \convd \mu$ which is a weak Law of Large Numbers. You will just need to copy from the class notes. Do on a separate piece of paper. }
+
+\end{enumerate}
+
+
+\end{document}
