@@ -1,0 +1,119 @@
+\documentclass[12pt]{article}
+
+\include{preamble}
+
+\title{Math 241 Fall 2017 \\ Midterm Examination Two}
+\author{Professor Adam Kapelner}
+
+\date{November 14/15, 2017}
+
+\begin{document}
+\maketitle
+
+\noindent Full Name \line(1,0){255} ~~~ Section (A, B or C)~ \line(1,0){30}
+
+\thispagestyle{empty}
+
+\section*{Code of Academic Integrity}
+
+\footnotesize
+Since the college is an academic community, its fundamental purpose is the pursuit of knowledge. Essential to the success of this educational mission is a commitment to the principles of academic integrity. Every member of the college community is responsible for upholding the highest standards of honesty at all times. Students, as members of the community, are also responsible for adhering to the principles and spirit of the following Code of Academic Integrity.
+
+Activities that have the effect or intention of interfering with education, pursuit of knowledge, or fair evaluation of a student's performance are prohibited. Examples of such activities include but are not limited to the following definitions:
+
+\paragraph{Cheating} Using or attempting to use unauthorized assistance, material, or study aids in examinations or other academic work or preventing, or attempting to prevent, another from using authorized assistance, material, or study aids. Example: using an \emph{unauthorized} cheat sheet in a quiz or exam, altering a graded exam and resubmitting it for a better grade, etc.
+\\
+
+\noindent I acknowledge and agree to uphold this Code of Academic Integrity. \\
+
+\begin{center}
+\line(1,0){250} ~~~ \line(1,0){100}\\
+~~~~~~~~~~~~~~~~~~~~~signature~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ date
+\end{center}
+
+\normalsize
+
+\section*{Instructions}
+
+This exam is seventy five minutes and closed-book. You are allowed one 8.5'' $\times$ 11'' page (front and back) of a \qu{cheat sheet.} You may use a graphing calculator of your choice. Please read the questions carefully. If the question reads \qu{compute,} this means the solution will be a number otherwise you can leave the answer in choose, permutation, exponent, factorial or any other notation which could be resolved to a number with a computer. I advise you to skip problems marked \qu{[Extra Credit]} until you have finished the other questions on the exam, then loop back and plug in all the holes. I also advise you to use pencil. The exam is 100 points total plus extra credit. Partial credit will be granted for incomplete answers on most of the questions. \fbox{Box} in your final answers. Good luck!
+
+\pagebreak
+
+%\problem Below are some multiple choice theoretical exercises. Circle the correct answer.
+%
+%\benum
+%\subquestionwithpoints{3} Given the following r.v.} is
+%
+%\begin{enumerate}[(i)]
+%\item always true
+%\item sometimes true
+%\item never true
+%\end{enumerate}
+
+%\eenum
+
+\problem Below are some questions related to a gambling game played with this die:
+
+\begin{figure}[htp]
+\centering
+\includegraphics[width=2in]{skull_dice.jpg}
+\end{figure}
+
+\noindent This die is \emph{weighted} so that the skull and crossbones $\skull$ side appears 50\% of the time and the other faces (two dots, three dots, four dots, five dots and six dots) are equally likely, so they each have probability 10\%. During the game, the roller wins the amount in dollars (\$) of the number on the face but if you roll a $\skull$, you lose \$4. 
+
+
+\benum
+
+\subquestionwithpoints{6} Create a r.v. $X$ that represents the roller's wins/losses (an amount of money) in this game. Use the notation in class to fully specify $X$. \spc{6}
+
+\subquestionwithpoints{4} What is the $\support{X}$? \spc{2}
+
+\subquestionwithpoints{4} Describe the set $\braces{\omega : X(\omega) \in \support{X}}$ by listing its elements. \spc{2}
+
+\subquestionwithpoints{4} The $\skull$ is currently weighted to roll 50\% of the time. Let's say the weighting can be changed but this is the only thing about the dice and the game that is changable. Call the weighting proportion $a$. What is the parameter space of $X$ now?  \spc{1}
+
+\subquestionwithpoints{4} If $a=1$, describe the r.v. $X$ using the notation from class.  \spc{1}
+
+
+\subquestionwithpoints{5} Assume $a=50\%$ like we originally said in the problem and assume it will not change for the rest of this exam. Graph $p(x)$. Try to draw the x and y-axis to scale. Try to draw the y-axis to scale as it will help you for future problems. \spc{6}
+
+\subquestionwithpoints{5} Graph $F(x)$. Try to draw the x and y-axis to scale as it will help you for future problems. \spc{7}
+
+\subquestionwithpoints{4} Compute Med$\bracks{X}$. \spc{0.5}
+
+\subquestionwithpoints{4} Compute Quantile$\bracks{X,~75\%}$. \spc{0.5}
+
+\subquestionwithpoints{3} Compute Quantile$\bracks{X,~95\%}$. \spc{0.5}
+
+\subquestionwithpoints{6} Compute $\expe{X}$ and include unit. Round to two decimals if necessary. Interpret your answer in a couple of sentences. \spc{6}
+
+\subquestionwithpoints{4} Does the r.v. $X$ specify a \qu{fair game}? Explain why or why not. \spc{1}
+
+\subquestionwithpoints{5} Compute $\var{X}$ and include unit. Round to two decimals if necessary. \spc{4}
+
+\subquestionwithpoints{3} Compute $\se{-2X}$, include unit and round to two decimals if necessary.  \spc{1}
+
+\subquestionwithpoints{5} You play against your friend (one die is rolled). Your winnings are represented by $X$, the r.v. we've been considering up until this point. His winnings are $Y$. Since you win what he loses (and vice versa), then $Y = -X$. Find $\expe{Y}$. Include unit. Round to two decimals if necessary.\spc{1}
+
+\subquestionwithpoints{5}  Find $\var{Y}$ and include unit. Round to two decimals if necessary. \spc{1}
+
+\subquestionwithpoints{4}  Prove or disprove: $X \equalsindist Y$. \spc{4}
+
+\subquestionwithpoints{4}  Prove or disprove: $X$ and $Y$ are independent. \spc{4}
+
+
+\subquestionwithpoints{3} Find $\var{X+Y}$. Round to two digits if necessary. \spc{5}
+
+
+\subquestionwithpoints{5} We play the game 16 times. What is the probability you roll a 5 seven times? Remember, the probability of rolling the 5 is 10\% since it is not a fair die. No need to compute explicitly. \spc{6}
+
+\subquestionwithpoints{3} Let's say we keep rolling until we get a 5. Create a r.v. $T$ that models this event. \spc{1}
+
+\subquestionwithpoints{5} Find $\prob{T \leq 2}$. Round to two digits.  \spc{6}
+
+
+\subquestionwithpoints{5} Find $\expe{T^2}$. Round to two digits.  \spc{3}
+\eenum
+
+
+\end{document}
