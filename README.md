@@ -43,15 +43,14 @@ My lectures can be listened to as youtube tracks [(all lectures)](https://www.yo
 
 ## Martin Sendrowicz's Notes - THE VERY NICEST EVER
 
-Midterm 1 [(A)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/marcin/1a.pdf) [(B)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/marcin/1b.pdf) [(C)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/marcin/1c.pdf)
+Midterm 1 material [(A)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/marcin/1a.pdf) [(B)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/marcin/1b.pdf) [(C)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/marcin/1c.pdf)
 
-Midterm 2 [(A)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/marcin/2a.pdf) [(B)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/marcin/2b.pdf) [(C)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/marcin/2c.pdf) [(D)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/marcin/2d.pdf)
+Midterm 2 material [(A)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/marcin/2a.pdf) [(B)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/marcin/2b.pdf) [(C)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/marcin/2c.pdf) [(D)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/marcin/2d.pdf)
+
+Final material [(A)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/marcin/3a.pdf) [(B)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/marcin/3b.pdf) [(C)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/marcin/3c.pdf) [(D)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/marcin/3d.pdf)
 
 ## Homeworks
 
-<!--
-* Homework 9 [(download)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/homeworks/hw09/hw09.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/homeworks/hw09/hw09.pdf) (due 12/12)
-* Homework 8 [(download)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/homeworks/hw08/hw08.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/homeworks/hw08/hw08.pdf) (due 12/2)-->
 * Homework 7 [(download)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/homeworks/hw07/hw07.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/homeworks/hw07/hw07.pdf) (due 12/12)
 * Homework 6 [(download)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/homeworks/hw06/hw06.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/homeworks/hw06/hw06.pdf) (due 11/30)
 * Homework 5 [(download)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/homeworks/hw05/hw05.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/homeworks/hw05/hw05.pdf) (due 11/13)
