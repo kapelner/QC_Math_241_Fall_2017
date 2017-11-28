@@ -2,6 +2,7 @@
 
 This is the course homepage for Math 241 for the Fall semester 2017 at Queens College, City University of New York taught by Professor Adam Kapelner. The syllabus can be found [here](https://raw.githubusercontent.com/kapelner/QC_Math_241_Fall_2017/master/syllabus/syllabus.pdf).
 
+<!--
 ## Schedule
 
 There are three identical sections for this class:
@@ -9,7 +10,7 @@ A, Mon/Wed 10:45AM - 12PM
 B, Mon/Wed 1:40PM - 2:55PM
 C, Tue/Thu 6:30PM - 7:45PM
 
-If you are in Sections A or B, ignore the following. Due to the Jewish holidays, I cannot be here on two Thursdays for Section C: October 5 and 12 and thus those two classes are canceled. I usually give one whole lecture period devoted entirely to review. There will be no such lecture period for section C for Midterms 1 and 2. To make up for this, I will do a separate review period Monday October 2 from 6:30-8PM and Monday November 13 from 6:30-7:45PM for Section C only. Section C students are also welcome to come to the review in Sections A and B those Monday mornings for additional review.
+If you are in Sections A or B, ignore the following. Due to the Jewish holidays, I cannot be here on two Thursdays for Section C: October 5 and 12 and thus those two classes are canceled. I usually give one whole lecture period devoted entirely to review. There will be no such lecture period for section C for Midterms 1 and 2. To make up for this, I will do a separate review period Monday October 2 from 6:30-8PM and Monday November 13 from 6:30-7:45PM for Section C only. Section C students are also welcome to come to the review in Sections A and B those Monday mornings for additional review.-->
 
 ## Lectures
 
