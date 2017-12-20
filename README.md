@@ -68,15 +68,11 @@ Final material [(A)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/mast
 ## Exams
 
 
-* Midterm I, October 3/4 (in class).
+* Midterm I, October 3/4 (in class) [(exam)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/exams/midterm1/midterm1.pdf) [(solutions)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/exams/midterm1/midterm1_solutions.pdf)
 
-[(exam)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/exams/midterm1/midterm1.pdf) [(solutions)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/exams/midterm1/midterm1_solutions.pdf)
+* Midterm II, November 14/15 (in class) [(exam)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/exams/midterm2/midterm2.pdf) [(solutions)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/exams/midterm2/midterm2_solutions.pdf)
 
-* Midterm II, November 14/15 (in class). 
-
-[(exam)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/exams/midterm2/midterm2.pdf) [(solutions)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/exams/midterm2/midterm2_solutions.pdf)
-
-* Final, December 18/19/20
+* Final, December 18/19/20 [(exam)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/exams/final/final.pdf) [(solutions)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/exams/final/final_solutions.pdf)
 
 ## Practice Exams
 

@@ -1,0 +1,547 @@
+\documentclass[12pt]{article}
+
+\usepackage{eurosym}
+\include{preamble}
+
+\title{Math 241 Fall 2017 \\ Final Examination}
+\author{Professor Adam Kapelner}
+
+\date{December 18, 19 and 20, 2017}
+
+\begin{document}
+\maketitle
+
+\noindent Full Name \line(1,0){250} ~~~ Section (A, B or C)~ \line(1,0){30}
+
+\thispagestyle{empty}
+
+\section*{Code of Academic Integrity}
+
+\footnotesize
+Since the college is an academic community, its fundamental purpose is the pursuit of knowledge. Essential to the success of this educational mission is a commitment to the principles of academic integrity. Every member of the college community is responsible for upholding the highest standards of honesty at all times. Students, as members of the community, are also responsible for adhering to the principles and spirit of the following Code of Academic Integrity.
+
+Activities that have the effect or intention of interfering with education, pursuit of knowledge, or fair evaluation of a student's performance are prohibited. Examples of such activities include but are not limited to the following definitions:
+
+\paragraph{Cheating} Using or attempting to use unauthorized assistance, material, or study aids in examinations or other academic work or preventing, or attempting to prevent, another from using authorized assistance, material, or study aids. Example: using an \emph{unauthorized} cheat sheet in a quiz or exam, altering a graded exam and resubmitting it for a better grade, etc.
+\\
+
+\noindent I acknowledge and agree to uphold this Code of Academic Integrity. \\
+
+\begin{center}
+\line(1,0){250} ~~~ \line(1,0){100}\\
+~~~~~~~~~~~~~~~~~~~~~signature~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ date
+\end{center}
+
+\normalsize
+
+\section*{Instructions}
+
+This exam is 120 minutes and closed-book. You are allowed three 8.5'' $\times$ 11'' pages (front and back) of a \qu{cheat sheet.} You may use a graphing calculator of your choice but \emph{no cell phones}. Please read the questions carefully. If the question reads \qu{compute,} this means the solution will be a number otherwise you can leave the answer in choose, permutation, factorial, summation or any other notation which could be resolved to a number with a computer. I advise you to skip problems marked \qu{[Extra Credit]} until you have finished the other questions on the exam, then loop back and plug in all the holes. I also advise you to use pencil. The exam is 100 points total plus extra credit. Partial credit will be granted for incomplete answers on most of the questions. \fbox{Box} in your final answers. Good luck!
+
+\pagebreak
+
+\problem You are the marketing executive for a food company that is developing a new granola bar. You are so busy worrying about sales and distribution that you cannot work too hard on flavor, hence you pick the most loved flavor: chocolate. 
+
+\begin{center}
+\includegraphics[width=3in]{chocolate.png}
+\end{center}
+
+\noindent You want to indeed verify this will sell so you do a survey as follows: each person in the survey tastes the bar and tells you whether or not they would buy it from you. Call the true proportion of people who would buy it $p$.
+
+
+\benum
+
+\subquestionwithpoints{4} We survey 200 unique people at random from a very expensive supermarket in Manhattan. Under what circumstance(s) would this be an \emph{unbiased} survey? \spc{3} 
+
+\subquestionwithpoints{4} We survey 200 unique people at random from a very expensive supermarket in Manhattan. Under what circumstance(s) would this be a \emph{biased} survey? \spc{3} 
+
+\subquestionwithpoints{3} We survey 200 unique people at random from a very expensive supermarket in Manhattan and 173 of them would buy the bar. Provide your best guess of $p$. \spc{2} 
+
+\subquestionwithpoints{5} Based on the data in (c), create a confidence interval for the true proportion. Use all notation from class to denote the interval. \spc{1} 
+
+\subquestionwithpoints{4} What could we do to create a more precise confidence interval without sacrificing confidence? \spc{1} 
+
+\subquestionwithpoints{10} The executive team tells you that unless 90\% of people would buy the bar, the product will not be profitable. Do a two-sided hypothesis test and provide a one-sentence answer for the executive team. \spc{9} 
+
+
+\subquestionwithpoints{4} What error could you have been guilty of making in the previous question --- a type I or type II error? \spc{1} 
+
+\subquestionwithpoints{4} What is the cost of this error? Answer \emph{in English} and explain clearly. \spc{3} 
+
+\subquestionwithpoints{4} What step(s) could you have taken to reduce the chance of this error? \spc{1} 
+
+\subquestionwithpoints{3} Regardless of any of the questions above, assume that truly 90\% of people would buy the bar. Create a r.v. model that reflects how many people need to answer the survey before finding one who likes the bar.\spc{1} 
+
+
+\subquestionwithpoints{6} Regardless of any of the questions above, assume that truly 90\% of people would buy the bar. If you survey 15 people, what is the probability more than 13 like the bar? Compute explicitly. Round to two significant digits. \spc{4} 
+
+\subquestionwithpoints{10} Regardless of any of the questions above, assume that truly 90\% of people would buy the bar if they go to the store. If you make \$2 profit on each sold bar, create a r.v. that reflects the approximate total profit after 100 people enter the store. Compute parameters explicitly and provide the PMF (or PDF).\spc{8} 
+
+\subquestionwithpoints{2} What theorem did you use in the previous question?\spc{1} 
+%\subquestionwithpoints{2} Based on the r.v. created in the previous question, what is the probability you make more than \$200?.\spc{2} 
+
+
+\eenum
+
+
+\problem You are in your office building in Manhattan mesmerized by the lightning storm outside
+
+\begin{center}
+\includegraphics[width=3.6in]{lightning.png}
+\end{center}
+
+\noindent and you are waiting for the next beautiful bolt of lightning. By your calculations, lightning is approximately distributed exponentially with rate parameter $\lambda = 1$ min.
+
+
+\benum
+\subquestionwithpoints{4} Let $X \sim \exponential{1}$. Draw the PDF of $X$ below. Notate the axes and indicate important points on the plot. \spc{5} 
+
+%\subquestionwithpoints{2} Let $X \sim \exponential{1}$. Draw the CDF of $X$ below. Notate the axes and indicate important points on the plot. \spc{4} 
+
+\subquestionwithpoints{4} Let $X \sim \exponential{1}$. Draw the PMF of $X$ below. Notate the axes and indicate important points on the plot. \spc{4} 
+
+\subquestionwithpoints{6} Let $Y$ denote the r.v. of total waiting time until the next lightning bolt given that 1 minute has already elapsed. Draw the CDF of $Y$ below. Notate the axes and indicate important points on the plot. \spc{5} 
+
+\eenum
+
+
+\problem You are composing jazz music for the piano (example below).
+
+\begin{center}
+\includegraphics[width=4in]{jazz.png}
+\end{center}
+
+\noindent The typical \qu{American songbook} style music is four-bar in the form AABA where each bar is four measures. There is typically one chord per measure. Thus there are 8 unique measures in a single song and hence 8 chords. 
+
+To pick a chord, you first pick a key and then a quality. There are 12 keys to choose from: $C, C\sharp, D, D\sharp, E, F, F\sharp, G, G\sharp, A, A\sharp, B$ and 8 chord qualities: major, minor, augmented, half diminished, full diminished, dominant 7th, minor 7th and major 7th.
+
+Pretend all chords are picked at random for the purpose of this question and that all 8 chords are unique.
+
+
+\benum
+\subquestionwithpoints{3} How many unique chords are there? You need one key and one quality. Compute explicitly. \spc{4}
+
+\subquestionwithpoints{3} How many ways are there to choose 8 unique chords where order doesn't matter? No need to compute explicitly. \spc{3}
+
+\subquestionwithpoints{3} How many ways are there to choose 8 unique chords where order \emph{does} matter? No need to compute explicitly. \spc{3}
+
+
+\subquestionwithpoints{5} If 8 unique chords are picked at random, what is the probability they are all minor 7th? No need to compute explicitly. \spc{4}
+
+
+\eenum
+
+
+
+\problem Below are some theoretical questions.
+
+\benum
+\subquestionwithpoints{4} Let $X \sim \poisson{\lambda} = \lambda^x e^{-\lambda} / x!$. The mgf of $X$ is $M_X(t) = e^{\lambda (e^t - 1)}$ and $\support{X} = \naturals_0$ i.e. all natural numbers including zero. Provide an expression for $\expe{X}$ using the definition of expectation for discrete r.v.'s but do not solve. \spc{4}
+
+
+\subquestionwithpoints{5} Let $X \sim \poisson{\lambda} = \lambda^x e^{-\lambda} / x!$. The mgf of $X$ is $M_X(t) = e^{\lambda (e^t - 1)}$ and $\support{X} = \naturals_0$ i.e. all natural numbers including zero. Find $\expe{X}$ as function of the parameter(s) of $X$ using any method you wish. \spc{6}
+
+\subquestionwithpoints{3} [Extra credit] Let $X \sim \poisson{\lambda}$ Show that $Y = aX$ where $a>1$ is \emph{not} Poisson distributed. \spc{6}
+
+\subquestionwithpoints{5} [Extra credit] Let $X_n \sim \poisson{\frac{1}{n}}$. What r.v. does $X_n$ become as $n \rightarrow \infty$? Prove it below. \spc{4}
+\eenum
+
+\end{document}
+
+
+\problem You are the biostatician for a drug company that is trying to develop a drug to treat skin cancer which has spread to lymph nodes (we will call this the \qu{disease}). There are no drugs currently available for the disease so the company is developing a drug and wants to run a trial in the future.
+
+
+\begin{center}
+\includegraphics[width=2in]{pills.png}
+\end{center}
+
+\noindent The recovery rate right now for patients with the disease is 63\%. Assume this is the truth known with certainty.
+
+\benum
+\subquestionwithpoints{2} Bob who has the disease wants to be part of the drug trial. Model Bob's recovery as of now as 1 if he recovers and 0 if he does not recover as a r.v. below. Be sure to indicate parameter value(s). \spc{1} 
+
+\subquestionwithpoints{3} 100 people just like Bob with the disease want to be part of the trial. Model the total number of people of those 100 who will recover as of now below as the r.v. $X$. Be sure to indicate parameter value(s). \spc{1} 
+
+\subquestionwithpoints{4} What two assumptions did you make about the 100 people in order to build the model in part (b)? Explain each in this context. 
+
+\begin{table}[h]
+\centering
+\begin{tabular}{l|l}
+Assumption Name: \hspace{2.0in} & Assumption Name: \hspace{2.0in} \\ \hline
+Discussion: & Discussion: \\ 
+& \\
+& \\
+& \\ 
+& \\
+& \\
+& \\
+& \\
+\end{tabular}
+\end{table}
+
+\subquestionwithpoints{2} Calculate the expected number of people of the 100 who will recover.  \spc{1} 
+
+\subquestionwithpoints{3} Compute explicitly the percentage that exactly 63 people will recover. Round to two decimal places. \spc{3} 
+
+%\subquestionwithpoints{3} Why is your answer to (f) so low? Discuss. \spc{3} 
+
+\subquestionwithpoints{5} For those 100 people just like Bob with the disease, model the \textit{proportion} of people who will recover below as the r.v. $\Phat$ and provide its \textit{approximate} distribution. Be sure to indicate parameter values.\spc{5}
+
+\subquestionwithpoints{2} What theorem did you use to answer (h)? No need to discuss. \spc{1} 
+
+\subquestionwithpoints{2} Find $\prob{\Phat = 0.63}$ below assuming the approximate distribution (and not the distribution of the r.v. in part b). \spc{0.1} 
+
+\subquestionwithpoints{2} We will now start testing our drug. Denote the proportion of people who truly recover as the population parameter $p$. We are unsure if the drug works and want to be scientifically honest. Thus our null hypothesis will be that the proportion of people who recover when taking the drug will be \textit{at most} the same as the population overall. Write this in our notation we used in class below. \spc{1}
+
+
+\subquestionwithpoints{2} Write the alternative hypothesis using the notation we learned in class. \spc{0.1}
+
+\subquestionwithpoints{1} What is the official name of this statistical test? \spc{1}
+
+
+\subquestionwithpoints{2} We will set $\alpha = 2.5\%$ since the scientific community is very conservative when it comes to new drugs. What is the probability of a Type I error?\spc{2}
+
+\subquestionwithpoints{3} Explain what a Type I error would be in this context.\spc{1}
+
+\subquestionwithpoints{3} Explain what a Type II error would be in this context.\spc{1}
+
+\subquestionwithpoints{3} Discuss what you believe the cost of a type II error would be in this case. \spc{2}
+
+\subquestionwithpoints{5} For the case where we have $n=100$ people who take the drug, find the retainment region for $H_0$ in this hypothesis test. Round to three digits. \spc{8}
+
+\subquestionwithpoints{5} Imagine 72 people of the 100 in the drug trial recovered. Run the hypothesis test, state the conclusion and then write a sentence which explains your conclusion in the context of drug trial. \spc{4}
+
+
+\subquestionwithpoints{1} Regardless of the conclusion of the hypothesis test, you \emph{feel} deep down inside that the drug is effective in increasing the recovery rate of the disease. What type of error do you \emph{feel} you made here? No explanation necessary. \spc{1}
+
+
+\subquestionwithpoints{3} If you were to design another experiment to prove that the drug is effective, what would you do differently and why? Hint: increasing $\alpha$ is \textit{not} the answer. \spc{3}
+
+\subquestionwithpoints{2} Regardless of the conclusion of the hypothesis test, we will pretend that the point estimate you computed, i.e. $\phat = 0.72$, represents the real probability of recovery under the drug. Denote $R$ as the event of recovery and $D$ as the event that the drug was taken. Thus $R^C$ denotes the person did not recover and $D^C$ denotes the person did not take the drug. What is $\cprob{R}{D}$? \spc{1}
+
+\subquestionwithpoints{1} Find $\cprob{R^C}{D}$.\spc{2}
+
+\subquestionwithpoints{6} Let's say the drug is on the market and you estimate 20\% of the people who have the disease take the drug. You see someone who recovers, what is the probability they took the drug? \spc{7}
+
+\eenum
+
+
+\problem You are part of a call center for a very large company.
+
+\begin{center}
+\includegraphics[width=4in]{call.png}
+\end{center}
+
+\noindent You have millions of clients but the probability each of them call in at any moment is very small. If there are 3,000,0000 clients and the probability any of them call in any second is 1 in 1,000,000 then you can say $\lambda = 3$ and model time in seconds until the next call as an \emph{exponential} distribution.
+
+\benum
+\subquestionwithpoints{2} Based on the description above, denote the time until the next call as r.v. $X$. Notate its distribution below as $X \sim$ something.\spc{5}
+
+\subquestionwithpoints{4} Provide a rough illustration of $f(x)$. Label the axes and label one point on the y-axis that is not 0. Do not worry about scale. \spc{6}
+
+\subquestionwithpoints{4} Provide a rough illustration of $F(x)$. Label the axes and label one point on the y-axis that is not 0. Do not worry about scale.  \spc{5}
+
+
+\subquestionwithpoints{4} What is the probability we will wait more than 5 seconds for the next call that comes in? No need to compute explicitly. \spc{3}
+
+\subquestionwithpoints{4} 4 seconds just elapsed. Given this information, what is the probability we will wait more than 5 seconds for the next call that comes in? No need to compute explicitly. \spc{3}
+
+\eenum
+
+
+
+\problem Some theoretical exercises are below.
+
+
+\benum
+\subquestionwithpoints{3} On the homework you were introduced to the r.v. $X \sim \poisson{\lambda}$. The PMF is $p(x) = \lambda^x e^{-\lambda} / x!$. If $\support{X} = \naturals \cup \braces{0}$, write an expression for $\expe{X}$ but \textit{do not solve}.\spc{2}
+
+\subquestionwithpoints{5} On the homework you were given that if $X \sim \poisson{\lambda}$ then $M_X(t) = e^{\lambda(e^t - 1)}$. Find $\expe{X}$ by any way you believe to be best.\spc{5}
+
+
+\subquestionwithpoints{3} Calculate 
+
+\beqn
+\int_2^\infty \oneoversqrt{2\pi} e^{-\half\squared{x-2}}dx = \quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad
+\eeqn\spc{3}
+
+\subquestionwithpoints{2} Let $X \sim \uniform{0}{1}$. Compute $\se{X}$ to two decimal places.\spc{3}
+
+
+\subquestionwithpoints{2} Assume $\prob{A} > 0$. Compute $\cprob{A}{A}$. \spc{2}
+
+\subquestionwithpoints{5} You are riding the F train from Roosevelt Ave Jackson Heights to Forest Hills 71Av/Continental. 
+
+
+\begin{center}
+\includegraphics[width=5in]{f_train.png}
+\end{center}
+
+\noindent That means you are traveling for 6 stops. The traveling time of each stop can be modeled as a r.v. with distribution $\normnot{1}{0.2042^2}$ minutes and we will assume independent travel time for each stop. Find the probability it takes you more than 7 minutes to get from Roosevelt Ave Jackson Heights to Forest Hills 71Av/Continental.\spc{10}
+
+
+\subquestionwithpoints{5} [Extra credit] Prove or disprove: $X \sim \uniform{a}{b}$ has the memorylessness property. \spc{7}
+
+\subquestionwithpoints{5} [Extra credit] If $X \sim \poisson{\lambda}$, find $\var{X}$. \spc{7}
+
+\subquestionwithpoints{5} [Extra credit] Find the skewness of the standard normal. 
+
+
+\eenum
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\problem Imagine a bag with 171 marbles each unique. 
+
+\begin{center}
+\includegraphics[width=2in]{marbles.jpg}
+\end{center}
+\benum
+
+\subquestionwithpoints{3} Imagine you select 19 balls with replacement. How many ways are there to select balls if their order matters and selection order matters? \spc{1} 
+
+\subquestionwithpoints{3} Imagine you select 19 balls with replacement. How many ways are there to select balls if their order does not matter? \spc{1} 
+
+\subquestionwithpoints{3} Imagine you select 19 balls without replacement. How many ways are there to select balls if their order matters? \spc{1} 
+
+\subquestionwithpoints{3} Imagine you select 19 balls without replacement. How many ways are there to select balls if their order does not matter? \spc{1}
+
+%\subquestionwithpoints{2} Although they're all different, 13 of them are red and the red ones are special. If you pull out 10 marbles, how many red ones are you able to get? \spc{1}
+
+%\subquestionwithpoints{3} Although they're all different, 29 of them are red and the red ones are special. If you pull out 150 marbles without replacement, how many red ones are you able to get? \spc{1}
+
+%\subquestionwithpoints{2} What is the probability of getting 11 red ones on a draw of 150 without replacement? No need to compute explicitly. \spc{1}
+
+%\subquestionwithpoints{3} 23 of them are red and the red ones are special. Imagine you have already drawn 10 red marbles on a draw of 10 without replacement. What is the chance you now get another 10 marbles in a draw of 140 without replacement? No need to compute explicitly. \spc{3}
+
+%\subquestionwithpoints{2} Imagine you have already drawn 10 red marbles on a draw of 10 without replacement. What is the chance you now get another 10 marbles in a remaining draw of 140 \textit{with} replacement? No need to compute explicitly. \spc{1}
+
+
+
+\eenum
+
+\problem Some theoretical exercises are below.
+
+\benum
+
+\subquestionwithpoints{2} Consider the following r.v.,
+
+\beqn
+X \sim \begin{cases}
+2 \withprob 1/7 \\
+4 \withprob 4/7 \\
+-3 \withprob 2/7 \\
+\end{cases}
+\eeqn
+
+Provide a set $\Omega$ for the domain of this r.v. \spc{1}
+
+\subquestionwithpoints{3} For the r.v. above, describe or illustrate (any way you can) of a physical device that will create the r.v. Be sure to use $\Omega$ in your illustration from (a).\spc{5}
+
+\subquestionwithpoints{2} Could it be possible that $\abss{\support{X}} < \abss{\Omega}$? Write \qu{yes} or \qu{no} only. \spc{1}
+
+\eenum
+
+\problem Some more theoretical exercises are below.
+
+\benum
+
+\subquestionwithpoints{4} Consider $X \sim \uniformdiscrete{a_1, a_2, a_3, a_4}$ i.e. $\abss{\support{X}} = 4$. Find the MGF of $X$ denoted by $M_X(t)$. \spc{2}
+
+
+\subquestionwithpoints{7} Consider a large number of $X_1, \ldots, X_n \iid \uniformdiscrete{a_1, a_2, a_3, a_4}$. Consider $X_1 + \ldots + X_n$. What is its approximate distribution? Answer in as much detail as you can provide (partial credit will be given). Use sum notation for compactness.  \spc{6}
+
+\subquestionwithpoints{7} Consider $Y_1$ being distributed as 5 or 10 with equal probability and $Y_2 \sim \bernoulli{\half}$ where $Y_1$ and $Y_2$ are independent. Show that $Y_1 + Y_2$ is a uniform discrete r.v. with $\abss{\support{X}} = 4$ using MGF's. \spc{8}
+
+
+
+\subquestionwithpoints{3} [E.C.] Give examples of $a_1, a_2, a_3, a_4$ above which would most likely break the approximation from part (d) for a modest size $n$. \spc{2}
+
+\subquestionwithpoints{3} [E.C.] Find $\expe{\tothepow{\frac{X-\mu}{\sigma}}{13}}$ where $\mu$ and $\sigma$ are the mean and standard error of $X$ respectively. \spc{1}
+
+\eenum
+
+
+
+
+\problem We will investigate more about aliens and UFOs by looking at data from the \href{http://www.nuforc.org/webreports/ndxevent.html}{National UFO Reportion Center Online Database}.
+
+\begin{figure}[htp]
+\centering
+\includegraphics[width=2in]{ufo.jpg}
+\end{figure}
+
+Below is the number of events in each month in 2014 and represents the number of \qu{UFO sightings} across America, a country with 319 million people. Assume that each sighting is unique --- that is each person either makes a sighting for a given or does not and there are no duplicates. That is, a person cannot make more than one sighting per 12-month period.
+
+\begin{table}[htp]
+\small
+\centering
+\begin{tabular}{c|c}
+Month & Number \\ \hline
+12/2014 &	521 \\
+11/2014	&543 \\
+10/2014	&786 \\
+09/2014	&829 \\
+08/2014	&922 \\
+07/2014	&1096 \\
+06/2014	&776 \\
+05/2014	&652 \\
+04/2014	&666 \\
+03/2014	&517 \\
+02/2014	&554 \\
+01/2014	&715 \\
+\end{tabular}
+\end{table}
+
+\benum
+
+\subquestionwithpoints{2} We are interested in the true proportion of people who sight a UFO per year (not per month). Provide an estimate of this proportion below. Round to the nearest two digits. \spc{0.5}
+
+\subquestionwithpoints{6} Provide a 99.7\% confidence interval for the true proportion of people worldwide who see a UFO yearly. \spc{5}
+
+\subquestionwithpoints{3} Give two possible concerns as to why the confidence interval you produced in (b) may not be valid.
+
+\begin{enumerate}
+\item [1.] ~\\~\\
+\item [2.]
+\end{enumerate}
+
+\subquestionwithpoints{4} Regardless of the issues in (c), provide four possibe interpretations of the CI from (b).
+
+\begin{enumerate}
+\item [1.] ~\\~\\~\\
+\item [2.]~\\~\\~\\
+\item [3.]~\\~\\~\\
+\item [4.]~\\~\\~\\
+\end{enumerate}
+
+\subquestionwithpoints{3} Let's assume the point estimate of (a) is equal to the real population proportion (assume $p = \phat$ for the remainder of the problem). Assume 2015 is the same as 2014 with regards to UFO sightings (and the population of America remained the same to the nearest million people). What is the probability of less than 100,000 sightings in 2015? No need to compute exactly. Sum notation allowed.\spc{2}
+
+\subquestionwithpoints{2} It is possible some states have more UFO sightings than other states. Hawaii had 67 sightings in 2014 for a population of 1.42 million people. Here are some examples:
+
+\begin{table}[htp]
+\centering
+\footnotesize
+\begin{tabular}{lllll}
+Timestamp & City & Shape & Duration & Description \\ \hline
+1/15/14 03:30&	Paia	HI&	Sphere	&2 min	&  I Saw a golden sphere \\
+&&&&shaped object hovering over the water \\
+&&&&on the North Shore at 3:30am.	 \\
+1/15/14&	Kealia	HI	&Fireball	&20 min&	Fireball w- chinese laturns and parade \\
+&&&& of triangles.	 \\
+1/14/14 20:50&	Waimanalo	HI	&Fireball&	5 sec&	I saw an orange fireball with flames \\
+&&&& trailing as it shot diagonally across \\
+&&&& the sky and disappeared behind the\\
+&&&& nearby mountain range.	 \\ 
+%1/10/14 22:58&	Kaneohe	HI&	Fireball&	90 sec&	A silent red ball of light traveled \\
+%&&&&off the pacific ocean from the east \\
+%&&&&to the south below the clouds for \\
+%&&&&about 90 seconds.	 \\
+\end{tabular}
+\end{table}
+
+Find the sample proportion for seeing a UFO sighting in a year in Hawaii. Round to two digits. \spc{2}
+
+\subquestionwithpoints{7} Test whether this proportion is different than the proportion in America overall.
+
+\begin{enumerate}
+\item [$H_0$:] ~\\
+\item [$H_a$:] ~\\
+\item [$\alpha =$] ~~~~~~~~ $\Rightarrow z_{\alpha/2} = $
+\end{enumerate}~ \spc{2.5}
+
+\subquestionwithpoints{2} Based on your result in (g), is the event of being in Hawaii and the event of seeing a UFO over the course of a year independent or dependent? Explain using the definition of dependence and independence. \spc{2}
+
+\eenum
+
+
+\problem We return to our discussion of Chevalier de Mere and his compulsive dice gambiling.
+
+
+\begin{figure}[htp]
+\centering
+\includegraphics[width=1.31in]{chevalier.jpg}~\includegraphics[width=2in]{dice.jpg}
+\end{figure}
+
+\benum
+
+\subquestionwithpoints{3} Recall the dice game he played: you win if you get at least one 6-6 in 24 rolls of two dice. What is the probability of winning? Compute to four decimal places. \spc{3}
+
+\subquestionwithpoints{6} Chevalier de Mere most likely thought the probability of winning was 0.5 (not your answer from the previous question). Assuming Chevalier de Mere went easy on the wine and cigarettes and kept perfect records of wins and losses of everyone playing this game, how many games (denoted $n$) did he have to watch to be sure (at the 5\% level) that the probability of winning was less than 50\%. You can leave as an algebraic equation of $n$; you do not need to solve.\spc{7}
+
+
+\eenum
+
+
+\problem We learn about a bank alert system here for detecting fraudulent charges on a credit card.
+\begin{figure}[htp]
+\centering
+\includegraphics[width=3in]{credit.jpg}
+\end{figure}
+
+\benum
+
+\subquestionwithpoints{2} Assume each charge is legitimate from the start. What are the null and alternative hypotheses for this situation with credit card charges? No credit given for the general definition. Answer in English. \spc{1.5}
+
+%\subquestionwithpoints{2} Describe a Type I error for this situation with credit card charges. No credit given for the general definition. \spc{2}
+
+\subquestionwithpoints{3} Describe a Type II error for this situation with credit card charges. No credit given for the general definition. Answer in English. \spc{2}
+
+\subquestionwithpoints{3} Assume the Type I error rate is $\alpha$ with cost $C_I \sim \normnot{\$100}{\$50^2}$ and the Type II error rate is $\beta$ with cost $C_{II} \sim \normnot{\$500}{\$38^2}$. What is the expected cost to the bank for a single credit card transaction? \spc{3}
+
+%\subquestionwithpoints{3} Assuming the bank cannot change the two costs ($C_I$ and $C_{II}$). Give a strategy for the bank to minimize the expected cost in (d) without any chance of inadvertently increasing it. \spc{1}
+
+
+\eenum
+
+
+
+\problem Some questions about continuous r.v.'s
+
+\benum
+
+
+\subquestionwithpoints{2} The chi-squared distribution (denoted $\chi^2_k$) has a PDF given by
+
+\beqn
+\chi^2_k := f(x) = \frac{1}{2^{\frac{k}{2}}\Gamma\left(\frac{k}{2}\right)}\; x^{\frac{k}{2}-1} e^{-\frac{x}{2}}
+\eeqn 
+
+and its support is all non-negative numbers. Note that the gamma function (denoted $\Gamma$) is evaluated to a number using a computer.  \\
+
+What are the parameter(s) of the $\chi^2_k$ model?\spc{2}
+
+\subquestionwithpoints{4} Write an integral expression for $\expe{X}$ where $X \sim  \chi^2_k$. \spc{4}
+
+\subquestionwithpoints{4} Write an integral expression for $F(x)$ where $X \sim  \chi^2_k$. \spc{4}
+
+\subquestionwithpoints{3} Consider $T \sim \exponential{\lambda}$ which represents the time spent waiting for the Q64 in minutes. What is the probability of waiting more than 10 minutes? \spc{3}
+
+\subquestionwithpoints{4} A stopwatch beeps every minute. After each beep, which r.v. models the waiting time in minutes for the Q64? Assume of course the bus hasn't come by the beep.  \spc{2}
+
+%\subquestionwithpoints{2} A stopwatch beeps every 1$\mu$s (that's one-millionth of a second). After each beep, which r.v. models the waiting time in minutes for the Q64? Assume of course the bus hasn't come by the beep.  \spc{2}
+
+\eenum
+
+\problem Some theoretical questions below
+
+
+\end{document}
+
